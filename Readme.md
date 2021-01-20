@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Spartacus AW](https://up.htmlacademy.ru/htmlcss/30/user/1562115).
-* Наставник: `Неизвестно`.
+* Студент: [Сайкин Ярослав](https://up.htmlacademy.ru/htmlcss/30/user/1562115).
+* Наставник:`[Святослав Галыгин](https://htmlacademy.ru/profile/id1209723)`.
 
 ---
 
