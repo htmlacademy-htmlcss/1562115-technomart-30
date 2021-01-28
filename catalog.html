@@ -40,9 +40,16 @@
 
 
             <div class="header-profile">
-                <a href="#"></a>
-                <a href="#">Равшан Джамшутович</a>
-                <a href="#"></a>
+                <div class="user-name">
+                    <a href="#">Иконка пользователя</a>
+                    <a href="#">Равшан Джамшутович</a>
+                    <a href="#">Иконка выхода</a>
+                </div>
+                <div>
+                    <a href="#">Мои заказы</a>
+                    <a href="#">Личный кабинет</a>
+                </div>
+
             </div>
 
 
@@ -63,8 +70,47 @@
             </div>
         </section>
 
-
     </header>
+
+    <main>
+
+        <ul class="breadcrumb">
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="catalog.html">Инструмент</a></li>
+            <li><a href="#">Перфораторы</a></li>
+        </ul>
+
+        <section class="perforators">
+            <h1>ПЕРФОРАТОРЫ</h1>
+
+
+            <form method="get" action="https://echo.htmlacademy.ru/">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="bosch" id="filter-bosch">
+                            <label for="filter-bosch">BOSCH</label>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Питание:</legend>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+
+        </section>
+
+
+
+    </main>
+
 
 </body>
 
