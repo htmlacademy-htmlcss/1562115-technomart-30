@@ -2,116 +2,162 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Техномарт</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Техномарт</title>
 </head>
 
 <body>
 
-    <header>
-        <section class="header-logo">
-            <a href="index.html" class="">ТЕХНОМАРТ</a>
-            <div class="search">
-                <form>
-                    <input type="search">
-                    <button class="search-all" type="submit">ПОИСК</button>
-                </form>
-            </div>
+  <header>
+    <section class="header-logo">
+      <a href="index.html" class="">ТЕХНОМАРТ</a>
+      <div class="search">
+        <form>
+          <input type="search">
+          <button class="search-all" type="submit">ПОИСК</button>
+        </form>
+      </div>
 
-            <ul>
-                <li><a href="#">Закладки</a></li>
-                <li><a href="#">Корзина</a></li>
-            </ul>
+      <ul>
+        <li><a href="#">Закладки</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
 
-            <a href="#">Оформить заказ</a>
-        </section>
+      <a href="#">Оформить заказ</a>
+    </section>
 
-        <section class="header-contacts">
+    <section class="header-contacts">
 
-            <div class="header-name-addres">
-                <h4><i>Интернет-магазин <br>строительных материалов</br> и инструментов для ремонта</i></h4>
-            </div>
+      <div class="header-name-addres">
+        <h4><i>Интернет-магазин <br>строительных материалов</br> и инструментов для ремонта</i></h4>
+      </div>
 
-            <div class="header-contact">
-                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-            </div>
-
-
-            <div class="header-profile">
-                <div class="user-name">
-                    <a href="#">Иконка пользователя</a>
-                    <a href="#">Равшан Джамшутович</a>
-                    <a href="#">Иконка выхода</a>
-                </div>
-                <div>
-                    <a href="#">Мои заказы</a>
-                    <a href="#">Личный кабинет</a>
-                </div>
-
-            </div>
+      <div class="header-contact">
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      </div>
 
 
-        </section>
+      <div class="header-profile">
+        <div class="user-name">
+          <a href="#">Иконка пользователя</a>
+          <a href="#">Равшан Джамшутович</a>
+          <a href="#">Иконка выхода</a>
+        </div>
+        <div>
+          <a href="#">Мои заказы</a>
+          <a href="#">Личный кабинет</a>
+        </div>
 
-        <section class="header-main-menu">
+      </div>
 
-            <div class="header-menu">
-                <ul class="main-menu">
-                    <li class="menu-item"><a href="#">Главная</a></li>
-                    <li class="menu-item"><a href="#">Компания</a></li>
-                    <li class="menu-item"><a href="#">Каталог</a></li>
-                    <li class="menu-item"><a href="#">Новости</a></li>
-                    <li class="menu-item"><a href="#">Спецпреложения</a></li>
-                    <li class="menu-item"><a href="#">Доставка</a></li>
-                    <li class="menu-item"><a href="#">Контакты</a></li>
-                </ul>
-            </div>
-        </section>
 
-    </header>
+    </section>
 
-    <main>
+    <section class="header-main-menu">
 
-        <ul class="breadcrumb">
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="catalog.html">Инструмент</a></li>
-            <li><a href="#">Перфораторы</a></li>
+      <div class="header-menu">
+        <ul class="main-menu">
+          <li class="menu-item"><a href="#">Главная</a></li>
+          <li class="menu-item"><a href="#">Компания</a></li>
+          <li class="menu-item"><a href="#">Каталог</a></li>
+          <li class="menu-item"><a href="#">Новости</a></li>
+          <li class="menu-item"><a href="#">Спецпреложения</a></li>
+          <li class="menu-item"><a href="#">Доставка</a></li>
+          <li class="menu-item"><a href="#">Контакты</a></li>
         </ul>
+      </div>
+    </section>
 
-        <section class="perforators">
-            <h1>ПЕРФОРАТОРЫ</h1>
+  </header>
 
+  <main>
 
-            <form method="get" action="https://echo.htmlacademy.ru/">
-                <fieldset>
-                    <legend>Производители:</legend>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="bosch" id="filter-bosch">
-                            <label for="filter-bosch">BOSCH</label>
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Питание:</legend>
-                </fieldset>
-                <button type="submit">Показать</button>
-            </form>
-
-        </section>
+    <ul class="breadcrumb">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="catalog.html">Инструмент</a></li>
+      <li><a href="#">Перфораторы</a></li>
+    </ul>
 
 
+    <h1>ПЕРФОРАТОРЫ</h1>
 
-    </main>
+    <div class="filter">
+      <p>Фильтр:</p>
+      <p>Сортировка:</p>
+      <p>По цене:</p>
+      <p>По типу:</p>
+      <p>По функционалу:</p>
+    </div>
+
+    <section class="perforators">
+      <div class="form-filter">
+        <form method="get" action="https://echo.htmlacademy.ru/">
+
+          <div class="range-container">
+            <input type="range" min="0" max="30000" value="25000" class="input-price" id="my-range">
+            <p class="price-range">
+              0 - 30000
+            </p>
+          </div>
+
+          <fieldset>
+            <legend>Производители</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">BOSCH</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interscol" id="filter-interscol">
+                <label for="filter-interscol">ИНТЕРСКОЛ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">MAKITA</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="flter-dewalt">DEWALT</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">HITACHI</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="battery-power" value="batteries" id="filter-battery" checked>
+                <label for="filter-battery">АККУМУЛЯТОРНЫЕ</label>
+              </li>
+              <li>
+                <input type="radio" name="battery-power" value="networking" id="filter-network">
+                <label for="filter-network">СЕТЕВЫЕ</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">ПОКАЗАТЬ</button>
+        </form>
+      </div>
+
+
+      <div class="sorting-products">
+
+      </div>
+
+    </section>
+
+
+
+  </main>
 
 
 </body>
+
 
 </html>
