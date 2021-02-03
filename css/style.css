@@ -1,0 +1,130 @@
+/* Общие свойства */
+
+
+/* Переменные цветов */
+
+:root {
+--basic-black: #000000;
+--basic-dark: #293449;
+--basic-light-dark: #32425c;
+--basic-extra-dark: #1d2739;
+--basic-white: #ffffff;
+--basic-red-btn: #ee3643;
+
+--basic-green: #63a63e;
+--basic-neutral: #f9f5f0;
+--basic-gray-bg: #f1f5f7;
+--basic-yellow: #ffbf47;
+--basic-light-beige: #f7f3ec;
+
+
+--basic-gray:#f3f7f9;
+--special-gray: #c5c5c5; /* иконка входа в учетную запись*/
+--special-dark-gray: #b7bfc8; /* иконка телефона в хедере*/
+--special-neutral-gray: #a9a9a9;
+--special-light-gray: #f2f6f8;
+--special-gray-stroke: #e5e5e5;
+--special-red-btn: #ba2732;
+--special-green-btn: #5fbb2d;
+--special-extra-dark-grey: #3d546f; /*иконки входа, выхода и логина при ховере*/
+
+
+
+
+
+
+
+
+--special-blue: #3bbbc3;
+--special-purple: #dc91d8;
+--special-green: #8ed78f;
+--special-yellow: #ffd180;
+--special-light-yellow: #ffc047;
+--special-extra-light: #eaeaea;
+--special-dark: #212a3a; /* бэкграунд социальных сетей*/
+--special-dark-hyphen: #444444; /* Дефис в каталоге*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --special-gray: #c5c5c5; */
+
+
+
+}
+
+
+
+
+
+/* Шрифты Начало*/
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'),
+        url('../fonts/cuprum.woff2') format('woff2'),
+        url('../fonts/cuprum.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'),
+        url('../fonts/cuprumbold.woff2') format('woff2'),
+        url('../fonts/cuprumbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'),
+        url('../fonts/cuprumbolditalic.woff2') format('woff2'),
+        url('../fonts/cuprumbolditalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'),
+        url('../fonts/cuprumitalic.woff2') format('woff2'),
+        url('../fonts/cuprumitalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'),
+        url('../fonts/ptsans.woff2') format('woff2'),
+        url('../fonts/ptsans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'),
+        url('../fonts/ptsansbold.woff2') format('woff2'),
+        url('../fonts/ptsansbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Шрифты Конец*/
