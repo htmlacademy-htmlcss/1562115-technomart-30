@@ -1,48 +1,5 @@
-/* Общие свойства */
 
-
-/* Переменные цветов */
-
-:root {
---basic-black: #000000;
---basic-dark: #293449;
---basic-light-dark: #32425c;
---basic-extra-dark: #1d2739;
---basic-white: #ffffff;
---basic-red-btn: #ee3643;
---basic-green: #63a63e;
---basic-neutral: #f9f5f0;
---basic-gray-bg: #f1f5f7;
---basic-yellow: #ffbf47;
---basic-light-beige: #f7f3ec;
---basic-gray:#f3f7f9;
-
---special-gray: #c5c5c5; /* иконка входа в учетную запись */
---special-dark-gray: #b7bfc8; /* иконка телефона в хедере */
---special-neutral-gray: #a9a9a9;
---special-light-gray: #f2f6f8;
---special-gray-stroke: #e5e5e5;
---special-gray-radio: #b5b5b5;
-
---special-red-btn: #ba2732;
---special-dark-red: #ca2c37;
---special-green-btn: #5fbb2d;
---special-green-btn-click: #518534;
---special-extra-dark-grey: #3d546f; /* иконки входа, выхода и логина при ховере */
-
---special-blue: #3bbbc3;
---special-purple: #dc91d8;
---special-green: #8ed78f;
---special-yellow: #ffd180;
---special-light-yellow: #ffc047;
---special-extra-light: #eaeaea; /* обводка(stroke) у карточек товара */
---special-dark: #212a3a; /* бэкграунд социальных сетей*/
---special-dark-hyphen: #444444; /* Дефис в каталоге */
-
-
-
-
-/* Шрифты Начало */
+/* Шрифты - начало */
 
 @font-face {
   font-family: 'Cuprum';
@@ -100,4 +57,179 @@
   font-style: normal;
 }
 
-/* Шрифты Конец*/
+/* Шрифты - конец */
+
+
+/* Общие свойства */
+
+body {
+  min-width: 940px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header - НАЧАЛО */
+
+
+/* header-logo - начало */
+
+header {
+  background-color: var(--basic-gray);
+}
+
+.header-logo {
+
+  background-color: var(--basic-dark);
+}
+
+.header-logo-link {
+  background-color: var(--basic-red-btn);
+}
+
+.header-logo .search {
+  color: var(--basic-white);
+}
+
+.shopping-list .shopping-item{
+  color: var(--basic-white);
+}
+
+.header-logo .order {
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+
+}
+
+/*header logo - конец */
+
+/* header-contacts - начало */
+
+.header-name-address h4 {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: var(--basic-red-btn);
+}
+
+
+.header-address .header-phone {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--basic-red-btn);
+}
+
+
+.header-address span {
+  font-size: 14px;
+  color: var(--basic-light-dark);
+}
+
+
+
+.sign-up a {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+
+.header-main-menu {
+  background-color: var(--basic-light-dark);
+}
+
+
+ .menu-item a {
+  color: var(--basic-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Переменные цветов - начало*/
+
+:root {
+--basic-black: #000000;
+--basic-dark: #293449;
+--basic-light-dark: #32425c;
+--basic-extra-dark: #1d2739;
+--basic-white: #ffffff;
+--basic-red-btn: #ee3643;
+--basic-green: #63a63e;
+--basic-neutral: #f9f5f0;
+--basic-gray-bg: #f1f5f7;
+--basic-yellow: #ffbf47;
+--basic-light-beige: #f7f3ec;
+--basic-gray:#f3f7f9;
+
+--special-gray: #c5c5c5; /* иконка входа в учетную запись */
+--special-dark-gray: #b7bfc8; /* иконка телефона в хедере */
+--special-neutral-gray: #a9a9a9;
+--special-light-gray: #f2f6f8;
+--special-gray-stroke: #e5e5e5;
+--special-gray-radio: #b5b5b5;
+
+--special-red-btn: #ba2732;
+--special-dark-red: #ca2c37;
+--special-green-btn: #5fbb2d;
+--special-green-btn-click: #518534;
+--special-extra-dark-grey: #3d546f; /* иконки входа, выхода и логина при ховере */
+
+--special-blue: #3bbbc3;
+--special-purple: #dc91d8;
+--special-green: #8ed78f;
+--special-yellow: #ffd180;
+--special-light-yellow: #ffc047;
+--special-extra-light: #eaeaea; /* обводка(stroke) у карточек товара */
+--special-dark: #212a3a; /* бэкграунд социальных сетей*/
+--special-dark-hyphen: #444444; /* Дефис в каталоге */
+
+/* Переменные шрифтов - конец */
+
