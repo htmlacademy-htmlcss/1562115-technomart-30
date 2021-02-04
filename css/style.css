@@ -10,66 +10,39 @@
 --basic-extra-dark: #1d2739;
 --basic-white: #ffffff;
 --basic-red-btn: #ee3643;
-
 --basic-green: #63a63e;
 --basic-neutral: #f9f5f0;
 --basic-gray-bg: #f1f5f7;
 --basic-yellow: #ffbf47;
 --basic-light-beige: #f7f3ec;
-
-
 --basic-gray:#f3f7f9;
---special-gray: #c5c5c5; /* иконка входа в учетную запись*/
---special-dark-gray: #b7bfc8; /* иконка телефона в хедере*/
+
+--special-gray: #c5c5c5; /* иконка входа в учетную запись */
+--special-dark-gray: #b7bfc8; /* иконка телефона в хедере */
 --special-neutral-gray: #a9a9a9;
 --special-light-gray: #f2f6f8;
 --special-gray-stroke: #e5e5e5;
+--special-gray-radio: #b5b5b5;
+
 --special-red-btn: #ba2732;
+--special-dark-red: #ca2c37;
 --special-green-btn: #5fbb2d;
---special-extra-dark-grey: #3d546f; /*иконки входа, выхода и логина при ховере*/
-
-
-
-
-
-
-
+--special-green-btn-click: #518534;
+--special-extra-dark-grey: #3d546f; /* иконки входа, выхода и логина при ховере */
 
 --special-blue: #3bbbc3;
 --special-purple: #dc91d8;
 --special-green: #8ed78f;
 --special-yellow: #ffd180;
 --special-light-yellow: #ffc047;
---special-extra-light: #eaeaea;
+--special-extra-light: #eaeaea; /* обводка(stroke) у карточек товара */
 --special-dark: #212a3a; /* бэкграунд социальных сетей*/
---special-dark-hyphen: #444444; /* Дефис в каталоге*/
+--special-dark-hyphen: #444444; /* Дефис в каталоге */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* --special-gray: #c5c5c5; */
-
-
-
-}
-
-
-
-
-
-/* Шрифты Начало*/
+/* Шрифты Начало */
 
 @font-face {
   font-family: 'Cuprum';
