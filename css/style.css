@@ -396,6 +396,14 @@ li .footer-menu-item-catalog {
   background-color: var(--basic-dark);
 }
 
+.socials-list li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--special-dark);
+}
+
+
 .footer-feedback
 .feedback-link,
 .author-link {
