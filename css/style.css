@@ -100,6 +100,13 @@ ul {
 }
 
 
+.text {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+
 /* header - начало */
 
 
@@ -325,14 +332,6 @@ header {
   background-color: var(--basic-light-dark);
 }
 
-.services-text,
-.delivery-text,
-.guarantee-text,
-.credit-text {
-  font-size: 13px;
-  line-height: 24px;
-}
-
 
 .services-credit .credit-btn {
   font-size: 14px;
@@ -344,20 +343,64 @@ header {
 
 /* about-us*/
 
+.about-us-desc .about-us-btn {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-red-btn);
+}
+
+.contacts .contacts-map {
+  background-color: var(--special-dark-hyphen);
+}
+
+.contacts .help-btn {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-red-btn);
+}
+
+/* footer */
+/* footer-contact */
+
+.footer-logo {
+background-color: var(--basic-light-dark);
+}
+
+.footer-contact .footer-logo-link {
+  background-color: var(--basic-red-btn);
+}
+
+.footer-contact
+ .footer-address,
+ .footer-phone {
+  color: var(--basic-gray);
+}
+
+li .footer-menu-item {
+color: var(--basic-gray-bg);
+}
+
+
+li .footer-menu-item-catalog {
+  color: var(--special-yellow);
+}
 
 
 
+/* footer-block */
 
+.footer-block {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+}
 
-
-
-
-
-
-
-
-
-
+.footer-feedback
+.feedback-link,
+.author-link {
+  color: var(--special-yellow);
+}
 
 
 
