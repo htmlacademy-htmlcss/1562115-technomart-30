@@ -27,8 +27,8 @@
       </div>
 
       <ul class="shopping-list">
-        <li><a class="shopping-item" href="#">Закладки: 0</a></li>
-        <li><a class="shopping-item" href="#">Корзина: 0</a></li>
+        <li><a class="shopping-item bookmarks" href="#">Закладки: 0</a></li>
+        <li><a class="shopping-item basket" href="#">Корзина: 0</a></li>
       </ul>
 
       <a class="order" href="#">Оформить заказ</a>
@@ -55,13 +55,13 @@
 
       <nav class="header-menu">
         <ul class="main-menu">
-          <li class="menu-item"><a href="#">Главная</a></li>
-          <li class="menu-item"><a href="#">Компания</a></li>
+          <li class="menu-item"><a href="##">Главная</a></li>
+          <li class="menu-item"><a href="##">Компания</a></li>
           <li class="menu-item"><a href="catalog.html">Каталог</a></li>
-          <li class="menu-item"><a href="#">Новости</a></li>
-          <li class="menu-item"><a href="#">Спецпреложения</a></li>
-          <li class="menu-item"><a href="#">Доставка</a></li>
-          <li class="menu-item"><a href="#">Контакты</a></li>
+          <li class="menu-item"><a href="##">Новости</a></li>
+          <li class="menu-item"><a href="##">Спецпреложения</a></li>
+          <li class="menu-item"><a href="##">Доставка</a></li>
+          <li class="menu-item"><a href="##">Контакты</a></li>
         </ul>
       </nav>
     </section>
@@ -74,11 +74,11 @@
   <main>
     <section class="catalog">
       <ul class="catalog-menu">
-        <li class="catalog-item materials">Материалы<a href="#">На любой вкус</a></li>
-        <li class="catalog-item tools">Инструмент<a href="#">На все случаи</a></li>
-        <li class="catalog-item technic">Техника<a href="#">Для стройки</a></li>
-        <li class="catalog-item discounts">Скидки 50%<a href="#">На 350 товаров</a></li>
-        <li class="catalog-item delivery">Доставка<a href="#">Бесплатно</a></li>
+        <li class="catalog-item materials">Материалы<a href="##">На любой вкус</a></li>
+        <li class="catalog-item tools">Инструмент<a href="##">На все случаи</a></li>
+        <li class="catalog-item technic">Техника<a href="##">Для стройки</a></li>
+        <li class="catalog-item discounts">Скидки 50%<a href="##">На 350 товаров</a></li>
+        <li class="catalog-item delivery">Доставка<a href="##">Бесплатно</a></li>
       </ul>
 
       <figure class="catalog-slider">
@@ -88,7 +88,7 @@
         <p class="slider-text">Настоящие мужские игрушки</p>
         <button type="button" class="catalog-btn-left"></button>
         <button type="button" class="catalog-btn-right"></button>
-        <a class="slider-btn" href="#">Открыть каталог</a>
+        <a class="slider-btn" href="catalog.html">Открыть каталог</a>
       </figure>
     </section>
 
@@ -105,7 +105,7 @@
               alt="Модель перфоратора Bosch BFG 9000">
             <a class="product-link" href="#">Перфоратор BOSCH BFG 9000</a>
             <span><del>32500 Р.</del></span>
-            <p class="product-price"><strong>25500 Р.</strong></p>
+            <div class="product-price">25500 Р.</div>
           </li>
 
           <li class="product-item">
@@ -219,9 +219,15 @@
           <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! <br>Техномарт работает со
             многими транспортными компаниями:</p>
           <ul class="transport-list">
-            <li class="transport-item">Деловые линии</li>
-            <li class="transport-item">Автотрейдинг</li>
-            <li class="transport-item">ЖелДорЭкспедиция</li>
+            <li class="transport-item"><svg width="35" height="10">
+                <line x1="0" y1="50%" x2="25" y2="50%" stroke="var(--basic-red-btn)" stroke-width="2" />
+              </svg>Деловые линии</li>
+            <li class="transport-item"><svg width="35" height="10">
+                <line x1="0" y1="50%" x2="25" y2="50%" stroke="var(--basic-red-btn)" stroke-width="2" />
+              </svg>Автотрейдинг</li>
+            <li class="transport-item"><svg width="35" height="10">
+                <line x1="0" y1="50%" x2="25" y2="50%" stroke="var(--basic-red-btn)" stroke-width="2" />
+              </svg>ЖелДорЭкспедиция</li>
           </ul>
           <a class="about-us-btn" href="##">ПОДРОБНЕЕ О КОМПАНИИ</a>
       </div>
