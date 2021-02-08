@@ -200,6 +200,43 @@ li .basket:active {
 }
 
 
+.user-name-item .user {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+
+.user-name-item .user:active {
+  color: var(--special-gray);
+}
+
+.icon-user:hover .coordinates-user,
+.icon-exit:hover .coordinates-exit {
+  fill: var(--special-extra-dark-grey);
+}
+
+.icon-user:active .coordinates-user,
+.icon-exit:active .coordinates-exit {
+  fill: var(--special-gray);
+}
+
+
+.order-item a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-light-dark);
+}
+
+.order-item a:hover {
+  color: var(--basic-red-btn);
+}
+
+.order-item a:active {
+  color: var(--special-gray);
+}
+
+
 
 /* header-main-menu */
 
@@ -514,6 +551,25 @@ li .footer-menu-item-catalog:active {
 .author-link:active {
   color: var(--basic-red-btn);
 }
+
+
+
+/*СТИЛИЗАЦИЯ КАТАЛОГА*/
+
+.navigation-item,
+.navigation-item a {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+
+}
+
+
+
+
+
 
 
 
