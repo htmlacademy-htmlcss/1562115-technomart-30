@@ -594,17 +594,129 @@ li .footer-menu-item-catalog:active {
 }
 
 
+/* perforators */
+
+.subtitle-filter {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-light-beige);
+}
+
+/* range-container */
 
 
+.range-container .range-price {
+  background-color: var(--basic-light-beige);
+}
 
 
+.range-value
+.range-value-min,
+.range-value-max {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: var(--basic-light-beige);
+  border: none;
+  text-align: center;
+}
+
+.title-filter {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 
+.option-filter {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.btn-filter {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: 1px solid var(--special-gray-stroke);
+}
 
 
+/* sorting-products */
+
+/* Смотреть блок products выше, т.к. products и sorting-products блоки-близнецы */
+
+/* Стилизация кнопок "Купить" и "В закладки" */
+
+.product-item .btn-buy {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
 
 
+.product-item .btn-buy:hover {
+  background-color: var(--special-green-btn);
+}
 
+.product-item .btn-buy:active {
+  background-color: var(--special-green-btn-click);
+}
+
+.product-item .btn-bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-light-dark);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-green);
+  border-radius: 2px;
+  outline: none;
+}
+
+.product-item .btn-bookmarks:hover {
+  color: var(--basic-light-dark);
+  border: 3px solid var(--basic-light-dark);
+}
+
+.product-item .btn-bookmarks:active {
+  opacity: 50%;;
+}
+
+.list-pages-item a {
+  font-family: 'PT Sans', Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  border: 1px solid var(--special-gray-stroke);
+  border-radius: 2px;
+}
+
+.list-pages-item .one {
+  color: var(--basic-white);
+  background-color: var(--basic-red-btn);
+  border: none;
+}
+
+
+/* about-perforators */
+
+.about-perforators {
+  background-color: var(--basic-gray-bg);
+}
 
 
 
