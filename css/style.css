@@ -269,7 +269,7 @@ li .basket:active {
   color: var(--basic-white);
 }
 
-.catalog-item a {
+a .catalog-menu-title {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
@@ -277,11 +277,11 @@ li .basket:active {
   background-color: var(--special-white);
 }
 
-.catalog-item a:hover {
+a .catalog-menu-title:hover {
   background-color: var(--special-greylight);
 }
 
-.catalog-item a:active {
+a .catalog-menu-title:active {
   background-color: var(--special-greyblack);
 }
 

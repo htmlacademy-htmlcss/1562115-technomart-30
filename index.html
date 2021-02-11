@@ -32,10 +32,10 @@
       <a class="order" href="#">Оформить заказ</a>
     </div>
 
-    <section class="header-contacts">
+    <div class="header-contacts">
 
 
-      <h4 class="header-name-address">Интернет-магазинстроительных материалов и инструментов для ремонта</h4>
+      <h1 class="header-name-address">Интернет-магазинстроительных материалов и инструментов для ремонта</h1>
 
 
       <div class="header-address">
@@ -47,7 +47,7 @@
         <a class="login-link" href="##">Войти</a>
         <a class="registration-link" href="##">Регистрация</a>
       </div>
-    </section>
+    </div>
 
 
     <nav class="header-menu">
@@ -69,43 +69,63 @@
   <main>
     <section class="catalog">
       <h2>Каталог</h2>
-      <ul class="catalog-menu">
-        <li class="catalog-item materials">Материалы<a href="##">На любой вкус</a></li>
-        <li class="catalog-item tools">Инструмент<a href="##">На все случаи</a></li>
-        <li class="catalog-item technic">Техника<a href="##">Для стройки</a></li>
-        <li class="catalog-item discounts">Скидки 50%<a href="##">На 350 товаров</a></li>
-        <li class="catalog-item delivery">Доставка<a href="##">Бесплатно</a></li>
-      </ul>
 
-      <section class="catalog-slider">
-        <h2>Слайдер</h2>
-        <ul class="slider-list">
-          <li><img src="img/content/slider-perf.jpg" width="620" height="266"
-              alt="Изображение рабочего в каске, перчатках и с перфоратором в руках"></li>
-          <li><img src="img/content/slider-drill.jpg" width="620" height="266"
-              alt="Изображение рабочего в каске, перчатках, сверлящего кирпичную стену дрелью"></li>
-        </ul>
 
-        <h3 class="slider-subtitle">Перфораторы</h3>
-        <p class="slider-text">Настоящие мужские игрушки</p>
-        <h3 class="slider-subtitle">Дрели</h3>
-        <p class="slider-text">Соседям на радось!</p>
+      <div class="catalog-menu">
 
-        <div class="catalog-btn">
-          <button type="button" class="catalog-btn-left"><img src="img/icons/icon-btn-left.svg"
-              alt="Кнопка слайдера налево"></button>
-          <button type="button" class="catalog-btn-right"><img src="img/icons/icon-btn-right.svg"
-              alt="Кнопка слайдера направо"></button>
-        </div>
+        <div class="catalog-item materials">Материалы<a href="##">
+            <h3 class="catalog-menu-title">На любой вкус</h3>
+          </a></div>
+        <div class="catalog-item tools">Инструмент<a href="##">
+            <h3 class="catalog-menu-title">На все случаи</h3>
+          </a></div>
+        <div class="catalog-item technic">Техника<a href="##">
+            <h3 class="catalog-menu-title">Для стройки</h3>
+          </a></div>
+        <div class="catalog-item discounts">Скидки 50%<a href="##">
+            <h3 class="catalog-menu-title">На 350 товаров</h3>
+          </a></div>
+        <div class="catalog-item delivery">Доставка<a href="##">
+            <h3 class="catalog-menu-title">Бесплатно</h3>
+          </a></div>
 
-        <div class="catalog-slider-btn">
-          <button class="slider-circle-btn" type="button"></button>
-          <button class="slider-circle-btn" type="button"></button>
-        </div>
 
-        <a class="slider-btn" href="catalog.html">Открыть каталог</a>
+        <section class="catalog-slider">
+          <h2>Слайдер</h2>
+          <ul class="slider-list">
+            <li><img src="img/content/slider-perf.jpg" width="620" height="266"
+                alt="Изображение рабочего в каске, перчатках и с перфоратором в руках">
+              <h3 class="slider-subtitle">Перфораторы</h3>
+              <p class="slider-text">Настоящие мужские игрушки</p>
+              <a class="slider-btn" href="catalog.html">Открыть каталог</a>
+            </li>
 
-      </section>
+            <li><img src="img/content/slider-drill.jpg" width="620" height="266"
+                alt="Изображение рабочего в каске, перчатках, сверлящего кирпичную стену дрелью">
+              <h3 class="slider-subtitle">Дрели</h3>
+              <p class="slider-text">Соседям на радось!</p>
+              <a class="slider-btn" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
+
+          <div class="catalog-btn">
+            <button type="button" class="catalog-btn-left"><img src="img/icons/icon-btn-left.svg"
+                alt="Кнопка слайдера налево"></button>
+            <button type="button" class="catalog-btn-right"><img src="img/icons/icon-btn-right.svg"
+                alt="Кнопка слайдера направо"></button>
+          </div>
+
+          <div class="catalog-slider-btn">
+            <button class="slider-circle-btn" type="button"></button>
+            <button class="slider-circle-btn" type="button"></button>
+          </div>
+
+        </section>
+      </div>
+
+
+
+
     </section>
 
     <section class="products">
@@ -125,9 +145,9 @@
           <p class="product-price">25500 Р.</p>
 
           <div class="product-aside">
-            <button class="btn-buy" type="button"><img src="img/icons/icon-cart.svg" alt="Тележка"></img>Купить</button>
-            <button class="btn-bookmarks" type="button">В закладки</button>
-            <h3><a class="product-link" href="##">Перфоратор <span>Bosch Bfg 9000</span></a></h3>
+            <a class="btn-buy" href="##"><img src="img/icons/icon-cart.svg" alt="Тележка"></img>Купить</a>
+            <a class="btn-bookmarks" href="##">В закладки</a>
+            <h3><a class="product-link" href="##">Перфоратор<span>Bosch Bfg 9000</span></a></h3>
             <span>32500 Р.</span>
             <p class="product-price">25500 Р.</p>
           </div>
@@ -141,8 +161,8 @@
           <p class="product-price">15500 Р.</p>
 
           <div class="product-aside">
-            <button class="btn-buy" type="button"><img src="img/icons/icon-cart.svg" alt="Тележка"></img>Купить</button>
-            <button class="btn-bookmarks" type="button">В закладки</button>
+            <a class="btn-buy" href="##"><img src="img/icons/icon-cart.svg" alt="Тележка"></img>Купить</a>
+            <a class="btn-bookmarks" href="##">В закладки</a>
             <h3><a class="product-link" href="##">Перфоратор<span>Bosch Bfg 3000</span></a></h3>
             <span>22500 Р.</span>
             <p class="product-price">15500 Р.</p>
@@ -157,8 +177,8 @@
           <p class="product-price">25500 Р.</p>
 
           <div class="product-aside">
-            <button class="btn-buy" type="button"><img src="img/icons/icon-cart.svg" alt="Тележка"></img>Купить</button>
-            <button class="btn-bookmarks" type="button">В закладки</button>
+            <a class="btn-buy" href="##"><img src="img/icons/icon-cart.svg" alt="Тележка"></img>Купить</a>
+            <a class="btn-bookmarks" href="##">В закладки</a>
             <h3><a class="product-link" href="##">Перфоратор<span>Bosch Bfg 6000</span></a></h3>
             <span>30500 Р.</span>
             <p class="product-price">25500 Р.</p>
@@ -173,8 +193,8 @@
           <p class="product-price">12500 Р.</p>
 
           <div class="product-aside">
-            <button class="btn-buy" type="button"><img src="img/icons/icon-cart.svg" alt="Тележка"></img>Купить</button>
-            <button class="btn-bookmarks" type="button">В закладки</button>
+            <a class="btn-buy" href="##"><img src="img/icons/icon-cart.svg" alt="Тележка"></img>Купить</a>
+            <a class="btn-bookmarks" href="##">В закладки</a>
             <h3><a class="product-link" href="##">Перфоратор<span>Bosch Bfg 2000</span></a></h3>
             <span>22500 Р.</span>
             <p class="product-price">12500 Р.</p>
