@@ -132,9 +132,6 @@ header {
   background-color: var(--special-red-btn);
 }
 
-.header-logo .search {
-  color: var(--basic-white);
-}
 
 .shopping-list .shopping-item{
   color: var(--basic-white);
@@ -166,7 +163,7 @@ li .basket:active {
 
 /* header-contacts */
 
-.header-name-address h4 {
+.header-name-address {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -204,9 +201,9 @@ li .basket:active {
 
 
 
-/* header-main-menu */
+/* header-menu */
 
-.header-main-menu {
+.header-menu .main-menu {
   background-color: var(--basic-light-dark);
 }
 
