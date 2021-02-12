@@ -58,13 +58,14 @@
 }
 
 
+
 /* Общие свойства */
 
 body {
   min-width: 940px;
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', Verdana, sans-serif;
+  font-family: 'Cuprum', 'Verdana', sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -78,10 +79,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-ul {
-  list-style: none;
 }
 
 
@@ -104,7 +101,7 @@ ul {
 
 
 .text {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -132,6 +129,9 @@ header {
   background-color: var(--special-red-btn);
 }
 
+.header-logo ul {
+  list-style: none;
+}
 
 .shopping-list .shopping-item{
   color: var(--basic-white);
@@ -152,7 +152,8 @@ li .basket:active {
   background-color: var(--basic-green);
 }
 
-.header-logo .order:hover {
+.header-logo .order:hover,
+.header-logo .order:focus {
   background-color: var(--special-green-btn);
 }
 
@@ -191,7 +192,8 @@ li .basket:active {
   color: var(--basic-black);
 }
 
-.sign-up a:hover {
+.sign-up a:hover,
+.sign-up a:focus {
   color: var(--basic-red-btn);
 }
 
@@ -207,11 +209,16 @@ li .basket:active {
   background-color: var(--basic-light-dark);
 }
 
+.header-menu ul {
+  list-style: none;
+}
+
  .menu-item a {
   color: var(--basic-white);
 }
 
-.menu-item a:hover {
+.menu-item a:hover,
+.menu-item a:focus {
   background-color: var(--basic-dark);
 }
 
@@ -250,6 +257,11 @@ li .basket:active {
 }
 
 
+.catalog-slider ul {
+  list-style: none;
+}
+
+
 .catalog-slider .slider-subtitle {
   font-size: 36px;
   font-weight: 700;
@@ -262,14 +274,14 @@ li .basket:active {
 }
 
 
-.catalog-menu .catalog-item {
+.catalog-item h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   color: var(--basic-white);
 }
 
-a .catalog-menu-title {
+.catalog-item a {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
@@ -277,11 +289,12 @@ a .catalog-menu-title {
   background-color: var(--special-white);
 }
 
-a .catalog-menu-title:hover {
+.catalog-item a:hover,
+.catalog-item a:focus {
   background-color: var(--special-greylight);
 }
 
-a .catalog-menu-title:active {
+.catalog-item a:active {
   background-color: var(--special-greyblack);
 }
 
@@ -292,7 +305,8 @@ a .catalog-menu-title:active {
 }
 
 
-.catalog-slider .slider-btn:hover {
+.catalog-slider .slider-btn:hover,
+.catalog-slider .slider-btn:focus {
   background-color: var(--special-dark-red);
 }
 
@@ -302,6 +316,10 @@ a .catalog-menu-title:active {
 
 
 /* products */
+
+.products ul {
+  list-style: none;
+}
 
 .products .products-content {
   background-color: var(--basic-neutral);
@@ -321,7 +339,7 @@ a .catalog-menu-title:active {
 }
 
 .product-item .product-link {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -329,7 +347,7 @@ a .catalog-menu-title:active {
 }
 
 .product-item span {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -337,7 +355,7 @@ a .catalog-menu-title:active {
 }
 
 .product-item .product-price {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -352,6 +370,10 @@ a .catalog-menu-title:active {
 
 
 /* companies */
+
+.companies ul {
+  list-style: none;
+}
 
 .companies .companies-content {
   background-color: var(--basic-neutral);
@@ -375,6 +397,10 @@ a .catalog-menu-title:active {
 
 .services {
   background-color: var(--basic-gray-bg);
+}
+
+.services-slider ul {
+  list-style: none;
 }
 
 
@@ -404,6 +430,7 @@ background-color: var(--basic-dark);
 }
 
 
+
 .services-credit .credit-btn {
   font-size: 14px;
   line-height: 18px;
@@ -413,6 +440,10 @@ background-color: var(--basic-dark);
 
 
 /* about-us*/
+
+.about-us-desc ul {
+  list-style: none;
+}
 
 .about-us-desc .about-us-btn {
   color: var(--basic-white);
@@ -447,11 +478,17 @@ background-color: var(--basic-light-dark);
   color: var(--basic-gray);
 }
 
+.footer-menu ul {
+  list-style: none;
+}
+
+
 li .footer-menu-item {
   color: var(--basic-gray-bg);
 }
 
-li .footer-menu-item:hover {
+li .footer-menu-item:hover,
+li .footer-menu-item:focus {
   text-decoration: underline;
 }
 
@@ -464,7 +501,8 @@ li .footer-menu-item-catalog {
   color: var(--special-yellow);
 }
 
-li .footer-menu-item-catalog:hover {
+li .footer-menu-item-catalog:hover,
+li .footer-menu-item-catalog:focus {
   text-decoration: underline;
 }
 
@@ -483,6 +521,10 @@ li .footer-menu-item-catalog:active {
   background-color: var(--basic-dark);
 }
 
+.footer-block ul {
+  list-style: none;
+}
+
 .socials-list li {
   width: 44px;
   height: 44px;
@@ -491,8 +533,8 @@ li .footer-menu-item-catalog:active {
 
 }
 
-
 .socials-list li:hover,
+.socials-list li:focus,
 .socials-list li:active {
   background-color: var(--basic-red-btn);
 }
@@ -521,6 +563,14 @@ li .footer-menu-item-catalog:active {
 
 /* header-profile */
 
+.user-name {
+  list-style: none;
+}
+
+.order-list {
+  list-style: none;
+}
+
 
 .user-name-item .user {
   font-size: 21px;
@@ -538,6 +588,7 @@ li .footer-menu-item-catalog:active {
   fill: var(--special-extra-dark-grey);
 }
 
+
 .icon-user:active .coordinates-user,
 .icon-exit:active .coordinates-exit {
   fill: var(--special-gray);
@@ -550,7 +601,8 @@ li .footer-menu-item-catalog:active {
   color: var(--basic-light-dark);
 }
 
-.order-item a:hover {
+.order-item a:hover,
+.order-item a:focus {
   color: var(--basic-red-btn);
 }
 
@@ -562,9 +614,13 @@ li .footer-menu-item-catalog:active {
 
 /* navigation */
 
+.navigation ul {
+  list-style: none;
+}
+
 .navigation-item,
 .navigation-item a {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
@@ -594,7 +650,7 @@ li .footer-menu-item-catalog:active {
 /* perforators */
 
 .subtitle-filter {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
@@ -613,7 +669,7 @@ li .footer-menu-item-catalog:active {
 .range-value
 .range-value-min,
 .range-value-max {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 17px;
   line-height: 18px;
   background-color: var(--basic-light-beige);
@@ -621,8 +677,14 @@ li .footer-menu-item-catalog:active {
   text-align: center;
 }
 
+.form-filter-makers ul,
+.form-filter-power ul {
+  list-style: none;
+}
+
+
 .title-filter {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -631,14 +693,14 @@ li .footer-menu-item-catalog:active {
 
 
 .option-filter {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
 }
 
 .btn-filter {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -653,6 +715,11 @@ li .footer-menu-item-catalog:active {
 
 /* Стилизация кнопок "Купить" и "В закладки" */
 
+.sorting-products ul {
+  list-style: none;
+}
+
+
 .product-item .btn-buy {
   font-size: 14px;
   line-height: 18px;
@@ -665,7 +732,8 @@ li .footer-menu-item-catalog:active {
 }
 
 
-.product-item .btn-buy:hover {
+.product-item .btn-buy:hover,
+.product-item .btn-buy:focus {
   background-color: var(--special-green-btn);
 }
 
@@ -684,7 +752,8 @@ li .footer-menu-item-catalog:active {
   outline: none;
 }
 
-.product-item .btn-bookmarks:hover {
+.product-item .btn-bookmarks:hover,
+.product-item .btn-bookmarks:focus {
   color: var(--basic-light-dark);
   border: 3px solid var(--basic-light-dark);
 }
@@ -694,7 +763,7 @@ li .footer-menu-item-catalog:active {
 }
 
 .list-pages-item a {
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
@@ -721,52 +790,51 @@ li .footer-menu-item-catalog:active {
 
 
 
-
-
-/* Переменные цветов - начало*/
+/* Переменные цветов - начало */
 
 :root {
---basic-black: #000000;
---basic-dark: #293449;
---basic-light-dark: #32425c;
---basic-extra-dark: #1d2739;
---basic-white: #ffffff;
---basic-red-btn: #ee3643;
---basic-green: #63a63e;
---basic-neutral: #f9f5f0;
---basic-gray-bg: #f1f5f7;
---basic-yellow: #ffbf47;
---basic-light-beige: #f7f3ec;
---basic-gray:#f3f7f9;
+  --basic-black: #000000;
+  --basic-dark: #293449;
+  --basic-light-dark: #32425c;
+  --basic-extra-dark: #1d2739;
+  --basic-white: #ffffff;
+  --basic-red-btn: #ee3643;
+  --basic-green: #63a63e;
+  --basic-neutral: #f9f5f0;
+  --basic-gray-bg: #f1f5f7;
+  --basic-yellow: #ffbf47;
+  --basic-light-beige: #f7f3ec;
+  --basic-gray:#f3f7f9;
 
---special-gray: #c5c5c5; /* иконка входа в учетную запись */
---special-dark-gray: #b7bfc8; /* иконка телефона в хедере */
---special-neutral-gray: #a9a9a9;
---special-light-gray: #f2f6f8;
---special-gray-stroke: #e5e5e5;
---special-gray-radio: #b5b5b5;
+  --special-gray: #c5c5c5; /* иконка входа в учетную запись */
+  --special-dark-gray: #b7bfc8; /* иконка телефона в хедере */
+  --special-neutral-gray: #a9a9a9;
+  --special-light-gray: #f2f6f8;
+  --special-gray-stroke: #e5e5e5;
+  --special-gray-radio: #b5b5b5;
 
---special-red-btn: #ba2732;
---special-dark-red: #ca2c37;
---special-green-btn: #5fbb2d;
---special-green-btn-click: #518534;
---special-extra-dark-grey: #3d546f; /* иконки входа, выхода и логина при ховере */
+  --special-red-btn: #ba2732;
+  --special-dark-red: #ca2c37;
+  --special-green-btn: #5fbb2d;
+  --special-green-btn-click: #518534;
+  --special-extra-dark-grey: #3d546f; /* иконки входа, выхода и логина при ховере */
 
---special-blue: #3bbbc3;
---special-purple: #dc91d8;
---special-green: #8ed78f;
---special-yellow: #ffd180;
---special-light-yellow: #ffc047;
---special-extra-light: #eaeaea; /* обводка(stroke) у карточек товара */
---special-dark: #212a3a; /* бэкграунд социальных сетей*/
---special-dark-hyphen: #444444; /* Дефис в каталоге */
---special-ultra-dark: #161d29;
+  --special-blue: #3bbbc3;
+  --special-purple: #dc91d8;
+  --special-green: #8ed78f;
+  --special-yellow: #ffd180;
+  --special-light-yellow: #ffc047;
+  --special-extra-light: #eaeaea; /* обводка(stroke) у карточек товара */
+  --special-dark: #212a3a; /* бэкграунд социальных сетей*/
+  --special-dark-hyphen: #444444; /* Дефис в каталоге */
+  --special-ultra-dark: #161d29;
 
---special-white-middle: rgb(255,255,255, 0.5);
---special-white: rgba(255,255,255, 0.3);
---special-greylight: rgba(197,197,197, 0.3);
---special-greyblack: rgba(169, 169, 169, 0.3);
---special-black-oppacity: rgba(0,0,0, 0.3);
+  --special-white-middle: rgb(255,255,255, 0.5);
+  --special-white: rgba(255,255,255, 0.3);
+  --special-greylight: rgba(197,197,197, 0.3);
+  --special-greyblack: rgba(169, 169, 169, 0.3);
+  --special-black-oppacity: rgba(0,0,0, 0.3);
 
-/* Переменные цветов - конец */
+  /* Переменные цветов - конец */
+
 
