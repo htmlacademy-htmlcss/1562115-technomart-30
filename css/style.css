@@ -623,6 +623,7 @@ li .footer-menu-item-catalog:active {
   font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
 }
@@ -640,8 +641,8 @@ li .footer-menu-item-catalog:active {
   color: var(--basic-red-btn);
 }
 
-.navigation-item .link-filter-type,
-.navigation-item .link-filter-functionality {
+.filter-sorting .link-filter-type,
+.filter-sorting .link-filter-functionality {
   color: var(--special-black-oppacity);
   border-bottom: 1px dashed var(--basic-red-btn);
 }
