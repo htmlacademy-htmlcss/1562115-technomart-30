@@ -660,10 +660,9 @@ li .footer-menu-item-catalog:active {
   background-color: var(--basic-light-beige);
 }
 
-/* range-container */
+/* title-filter */
 
-
-.range-container .range-price {
+.title-filter .range-price {
   background-color: var(--basic-light-beige);
 }
 
