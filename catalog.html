@@ -41,12 +41,11 @@
     <div class="header-contacts">
 
 
-      <h1 class="header-name-address">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <p class="header-name-address">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
 
       <div class="header-address">
         <a class="header-phone" href="tel:+78125550555">
-          <img src="img/icons/icon-phone.svg" alt="Иконка телефонной трубки">
           +7(812) 555-05-55
         </a>
         <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -107,21 +106,23 @@
 
 
   <main>
+    <h1>Перфораторы</h1>
+
     <section class="navigation">
       <h2>Навигация(хлебные крошки)</h2>
       <ul class="breadcrumbs">
-        <li><a href=""><span>Главная</span></a></li>
+        <li><a href="index.html"><span>Главная</span></a></li>
         <li></li>
         <li class="navigation-item">
-          <a href="">Каталог</a>
+          <a href="##">Каталог</a>
         </li>
         <li></li>
         <li class="navigation-item">
-          <a href="">Инструмент</a>
+          <a href="##">Инструмент</a>
         </li>
         <li></li>
         <li class="navigation-item">
-          <a href="##">Перфораторы</a>
+          <a href="">Перфораторы</a>
         </li>
       </ul>
 
@@ -129,18 +130,21 @@
     </section>
 
     <section class="filter">
+      <h2 class="subtitle-filter">Фильтр:</h2>
       <form method="get" action="https://echo.htmlacademy.ru/">
-        <span class="subtitle-filter">Фильтр:</span>
         <fieldset>
           <legend class="title-filter">Цена:</legend>
           <div class="range-container">
             <div class="range-price">
-              <input type="range" min="0" max="30000" value="25000" class="input-price" id="my-range">
             </div>
             <div class="range-value">
-              <input class="range-value-min" type="text" value="0" disabled>
-              <span>-</span>
-              <input class="range-value-max" type="text" value="30000" disabled>
+              <fieldset>
+                <input class="range-value-min" type="number" value="0" id="range-value-min" disabled>
+                <label for="range-value-min"></label>
+
+                <input class="range-value-max" type="number" value="30000" disabled>
+                <label for="range-value-max"></label>
+              </fieldset>
             </div>
           </div>
         </fieldset>
@@ -189,7 +193,7 @@
     </section>
 
 
-    <section class="perforators">
+    <div class="perforators">
 
       <section class="filter-list">
         <h2 class="filter-item navigation-item">Сортировка</h2>
@@ -205,8 +209,8 @@
           </li>
         </ul>
         <ul class="list-btn-sorting">
-          <li><a class="btn-up" href="##"><span>кнопка-треульник вверх</span></a></li>
-          <li><a class="btn-down" href="##"><span>кнопка-треульник вниз</span></a></li>
+          <li><a class="btn-up" href="##"><span>Сортировка по возрастанию</span></a></li>
+          <li><a class="btn-down" href="##"><span>Сортировка по убыванию</span></a></li>
         </ul>
       </section>
 
@@ -343,7 +347,7 @@
 
         <ul class="list-pages">
           <li class="list-pages-item">
-            <a class="one" href="##">1</a>
+            <a class="one" href="">1</a>
           </li>
           <li class="list-pages-item">
             <a class="two" href="##">2</a>
@@ -357,7 +361,7 @@
         </ul>
       </section>
 
-    </section>
+    </div>
 
     <section class="about-perforators">
       <h2 class="heading">Пара слов о перфораторах</h2>

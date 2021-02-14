@@ -654,6 +654,7 @@ li .footer-menu-item-catalog:active {
   font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-light-beige);
