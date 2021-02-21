@@ -1039,10 +1039,14 @@ li .footer-menu-item-catalog:active {
 }
 
 
-/* .about-perforators .container {
+
+/* Если "разгридить" блок  ниже, то элементы выстроятся в ряд,
+хотя они блочные и должны идти друг под другом. */
+
+.about-perforators .container {
   display: grid;
-  grid-template-columns: auto;
-} */
+  grid-template-columns: 1fr;
+}
 
 
 /* main-footer-catalog */
