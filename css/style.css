@@ -835,7 +835,7 @@ li .footer-menu-item-catalog:active {
 
 
 
-/* navigation */
+/* page-catalog */
 
 .page-catalog .container {
   display: grid;
@@ -843,26 +843,19 @@ li .footer-menu-item-catalog:active {
 }
 
 
-.page-catalog .navigation {
+.page-catalog .breadcrumbs {
+  display: grid;
+  grid-template-columns: auto;
   grid-column: 1 / -1;
-  margin: 0;
-  padding: 0;
-}
-
-.page-catalog .perforators {
-  margin-left: 20px;
-}
-
-
-.navigation .breadcrumbs {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
 }
 
-.navigation-item,
-.navigation-item a {
+
+.breadcrumbs-item,
+.breadcrumbs-item a {
   font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -872,7 +865,10 @@ li .footer-menu-item-catalog:active {
 }
 
 
-.navigation .title {
+.page-catalog .title {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
   background-color: var(--basic-gray-bg);
   padding: 0;
   margin: 0;
@@ -880,13 +876,18 @@ li .footer-menu-item-catalog:active {
   margin-bottom: 20px;
 }
 
-.navigation .filter-list {
+.perforators .filter-list {
   background-color: var(--basic-light-beige);
 }
 
-.navigation-item .link-filter-price {
+.filter-item .link-filter-price {
   color: var(--basic-red-btn);
 }
+
+.filter-list ul {
+  list-style: none;
+}
+
 
 .filter-sorting .link-filter-type,
 .filter-sorting .link-filter-functionality {
@@ -896,6 +897,12 @@ li .footer-menu-item-catalog:active {
 
 
 /* perforators */
+
+
+.page-catalog .perforators {
+  margin-left: 20px;
+}
+
 
 .filter .subtitle-filter {
   font-family: 'PT Sans', 'Verdana', sans-serif;
@@ -966,8 +973,14 @@ li .footer-menu-item-catalog:active {
 
 /* Стилизация кнопок "Купить" и "В закладки" */
 
-.sorting-products ul {
+.sorting-products .products-list {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  column-gap: 20px;
+  row-gap: 18px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -1039,10 +1052,14 @@ li .footer-menu-item-catalog:active {
 }
 
 
-/* .about-perforators .container {
+
+/* Если "разгридить" блок  ниже, то элементы выстроятся в ряд,
+хотя они блочные и должны идти друг под другом. */
+
+.about-perforators .container {
   display: grid;
-  grid-template-columns: auto;
-} */
+  grid-template-columns: 1fr;
+}
 
 
 /* main-footer-catalog */
