@@ -149,6 +149,11 @@ header {
   list-style: none;
 }
 
+
+.header-logo .shopping-list {
+  display: flex;
+}
+
 .shopping-list .shopping-item{
   color: var(--basic-white);
 }
@@ -182,11 +187,10 @@ li .basket:active {
 
 .header-contacts  {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
+  grid-template-columns: 220px 270px 281px;
+  column-gap: 83px;
   width: 940px;
   margin: 0 auto;
-
 }
 
 .header-name-address {
@@ -195,13 +199,12 @@ li .basket:active {
   line-height: 23px;
   color: var(--basic-red-btn);
   margin: 0;
-  width: 197px;
 }
 
 .header-contacts .header-address {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  width: 270px;
-  justify-self: center;
 }
 
 
@@ -210,6 +213,8 @@ li .basket:active {
   font-weight: 700;
   line-height: 30px;
   color: var(--basic-red-btn);
+  border: 3px solid var(--basic-white);
+  box-sizing: border-box;
 }
 
 
@@ -219,9 +224,10 @@ li .basket:active {
 }
 
 .header-contacts .sign-up {
-  max-width: 281px;
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
-  justify-self: end;
+
 }
 
 .sign-up a {
@@ -250,13 +256,35 @@ li .basket:active {
 }
 
 .header-menu .main-menu {
+  display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.main-menu .menu-item {
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+.main-menu .menu-item:first-child {
+  padding-left: 53px;
+}
+
+
+/* Неуверен нужно ли свойство ниже, при наличии у первого
+ребенка padding-left 53px */
+
+.main-menu .menu-item:last-child {
+  padding-right: 53px;
 }
 
  .menu-item a {
   color: var(--basic-white);
 }
+
 
 .menu-item a:hover,
 .menu-item a:focus {
@@ -527,7 +555,7 @@ li .basket:active {
 .services .services-slider {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 50px;
+  column-gap: 390px;
 }
 
 
@@ -675,6 +703,8 @@ background-color: var(--basic-dark);
 .footer-address,
 .footer-phone {
   color: var(--basic-gray);
+  margin: 0;
+  padding: 0;
 }
 
 .footer-logo .footer-menu {
@@ -686,10 +716,30 @@ background-color: var(--basic-dark);
   list-style: none;
 }
 
+.footer-menu .footer-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu .footer-menu-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
 
 li .footer-menu-item {
   color: var(--basic-gray-bg);
 }
+
+.footer-menu-list li:not(:nth-child(5n)) {
+  margin-right: 58px;
+}
+
 
 li .footer-menu-item:hover,
 li .footer-menu-item:focus {
@@ -704,6 +754,12 @@ li .footer-menu-item:active {
 li .footer-menu-item-catalog {
   color: var(--special-yellow);
 }
+
+
+.footer-menu-catalog li:not(:nth-child(4n)) {
+  margin-right: 58px;
+}
+
 
 li .footer-menu-item-catalog:hover,
 li .footer-menu-item-catalog:focus {
@@ -721,7 +777,8 @@ li .footer-menu-item-catalog:active {
 
  .main-footer .footer-block {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 227px 1fr 287px;
+  column-gap: 50px;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
@@ -731,14 +788,16 @@ li .footer-menu-item-catalog:active {
 }
 
 .footer-block p {
-  width: 227px;
   margin: 0;
 }
 
 
 .footer-block ul {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
+  padding: 0;
   justify-self: center;
 }
 
@@ -747,8 +806,12 @@ li .footer-menu-item-catalog:active {
   height: 44px;
   border-radius: 50%;
   background-color: var(--special-dark);
-
 }
+
+.socials-list li:not(:nth-child(3)) {
+  margin-right: 4px;
+}
+
 
 .socials-list li:hover,
 .socials-list li:focus,
@@ -758,10 +821,13 @@ li .footer-menu-item-catalog:active {
 
 
 .footer-block .footer-feedback {
-  max-width: 286px;
+  display: flex;
   margin: 0;
+  padding: 0;
   justify-self: end;
 }
+
+
 
 .footer-feedback
 .feedback-link,
