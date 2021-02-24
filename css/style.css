@@ -857,7 +857,12 @@ li .footer-menu-item-catalog:active {
 }
 
 .order-list {
+  grid-column: 3 / -1;
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -913,6 +918,7 @@ li .footer-menu-item-catalog:active {
   display: grid;
   grid-template-columns: auto;
   grid-column: 1 / -1;
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -943,7 +949,17 @@ li .footer-menu-item-catalog:active {
 }
 
 .perforators .filter-list {
+  display: flex;
+  flex-wrap: wrap;
   background-color: var(--basic-light-beige);
+}
+
+.filter-list .filter-item {
+  font-family: 'PT Sans', 'Verdana', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .filter-item .link-filter-price {
@@ -951,6 +967,8 @@ li .footer-menu-item-catalog:active {
 }
 
 .filter-list ul {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -958,7 +976,7 @@ li .footer-menu-item-catalog:active {
 .filter-sorting .link-filter-type,
 .filter-sorting .link-filter-functionality {
   color: var(--special-black-oppacity);
-  border-bottom: 1px dashed var(--basic-red-btn);
+  border-bottom: 1px dotted var(--basic-red-btn);
 }
 
 
@@ -1090,6 +1108,12 @@ li .footer-menu-item-catalog:active {
 
 .product-item .btn-bookmarks:active {
   opacity: 50%;;
+}
+
+.sorting-products .list-pages {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .list-pages-item a {
