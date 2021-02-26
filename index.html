@@ -27,8 +27,8 @@
         </form>
 
         <ul class="shopping-list">
-          <li><a class="shopping-item bookmarks" href="#">Закладки: 0</a></li>
-          <li><a class="shopping-item basket" href="#">Корзина: 0</a></li>
+          <li class="shopping-item-bookmarks"><a class="shopping-item bookmarks" href="#">Закладки: 0</a></li>
+          <li class="shopping-item-basket"><a class="shopping-item basket" href="#">Корзина: 0</a></li>
         </ul>
 
         <a class="order" href="#">Оформить заказ</a>
@@ -47,7 +47,15 @@
       </div>
 
       <div class="sign-up">
-        <a class="login-link" href="##">Войти</a>
+        <a class="login-link" href="##">
+          <svg class="icon-login" width="21" height="17" viewBox="0 0 21 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="coordinates-login" d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5" />
+            <path class="coordinates-login"
+              d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"
+              fill="#C5C5C5" />
+          </svg>
+          Войти</a>
         <a class="registration-link" href="##">Регистрация</a>
       </div>
 
@@ -70,9 +78,9 @@
 
 
   <main>
-    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+    <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <section class="catalog container">
-      <h2>Каталог</h2>
+      <h2 class="visually-hidden">Каталог</h2>
 
 
       <div class="catalog-menu">
@@ -104,9 +112,9 @@
 
 
         <section class="catalog-slider">
-          <!-- <h2>Слайдер</h2> -->
+          <h2 class="visually-hidden">Слайдер</h2>
           <ul class="catalog-slider-list">
-            <li>
+            <li class="catalog-slider-perf">
               <img class="photo-perforator" src="img/content/slider-perf.jpg" width="620" height="266"
                 alt="Изображение рабочего в каске, перчатках и с перфоратором в руках">
               <h3 class="slider-subtitle">Перфораторы</h3>
@@ -114,13 +122,13 @@
               <a class="slider-btn" href="catalog.html">Открыть каталог</a>
             </li>
 
-            <!-- <li>
+            <li class="catalog-slider-drill">
               <img src="img/content/slider-drill.jpg" width="620" height="266"
                 alt="Изображение рабочего в каске, перчатках, сверлящего кирпичную стену дрелью">
               <h3 class="slider-subtitle">Дрели</h3>
               <p class="slider-text">Соседям на радось!</p>
               <a class="slider-btn" href="catalog.html">Открыть каталог</a>
-            </li> -->
+            </li>
           </ul>
 
           <div class="catalog-btn">
