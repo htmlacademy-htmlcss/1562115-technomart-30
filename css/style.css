@@ -791,6 +791,13 @@ padding: 0;
 
 /* products */
 
+
+.products {
+  margin-bottom: 70px;
+}
+
+
+
 /*
 .products .products-content {
   display: grid;
@@ -848,7 +855,8 @@ padding: 0;
 .products-list .product-item {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border: 1px var(--special-extra-light) solid;
   padding: 0;
@@ -858,8 +866,14 @@ padding: 0;
   height: 318px;
 }
 
+.product-item .product-img {
+  margin-bottom: 28px;
+}
+
+
 .product-item h3 {
   margin: 0;
+  margin-bottom: 7px;
 }
 
 
@@ -881,6 +895,7 @@ padding: 0;
   line-height: 18px;
   font-weight: 700;
   color: var(--special-neutral-gray);
+  margin-bottom: 13px;
 }
 
 .product-item .product-price {
@@ -890,12 +905,43 @@ padding: 0;
   font-weight: 700;
   width: 141px;
   min-height: 38px;
-  text-align: center;
+  /* text-align: center; */
   color: var(--basic-white);
   background-image: url('../img/background/bg-red-btn.svg');
   background-repeat: no-repeat;
   margin: 0;
+  padding: 0;
+  padding-top: 10px;
 }
+
+
+.product-item.new {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.product-item.new:after {
+  content: "New";
+  display: block;
+  background-color: var(--basic-red-btn);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 6px;
+  right: -28px;
+  transform: rotate(45deg);
+}
+
+
+
 
 
 /* companies */
@@ -1464,6 +1510,30 @@ li .footer-menu-item-catalog:active {
 }
 
 
+
+/* product-aside */
+
+
+.product-item .product-aside {
+  display: flex;
+  order: -1;
+}
+
+.product-item .product-aside {
+  display: none;
+}
+
+
+.product-item:hover .product-img {
+  display: none;
+}
+
+.product-item:hover .product-aside {
+  display: block;
+}
+
+
+
 .product-item .btn-buy {
   display: block;
   font-size: 14px;
@@ -1471,9 +1541,7 @@ li .footer-menu-item-catalog:active {
   width: 135px;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* padding-left: 30px; */
-  /* padding-right: 40px; */
-  /* height: 38px; */
+  margin-bottom: 10px;
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: var(--basic-green);
