@@ -177,24 +177,35 @@ header {
 
 .header-logo .search-form {
   padding-left: 17px;
+  /* position: relative; */
+  /* height: 100%; */
 }
 
 
 
 .search-form .search-input {
-  display: none;
-}
-
-
-.search-form .search-input:focus {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 250px;
-  z-index: 1;
+  right: 0;
+  padding: 0;
+  z-index: 2;
+  background: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
+  /* width: 0; */
+  /* display: none; */
+  /* height: 100%; */
 }
+/*
+.search-input .search-input:focus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 270px;
+  z-index: 1;
+  background-color: var(--basic-white);
+}  */
 
 
 .icon-search .coordinates-search {
@@ -219,7 +230,6 @@ header {
   padding: 0;
   margin: 0;
   background-color: var(--basic-dark);
-
 }
 
 
@@ -342,6 +352,7 @@ header {
   column-gap: 83px;
   width: 940px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .header-name-address {
@@ -385,8 +396,6 @@ header {
   margin-left: 39px;
   margin-right: 16px;
 }
-
-
 
 
 
@@ -465,14 +474,14 @@ header {
   background-color: var(--basic-light-dark);
   width: 940px;
   margin: 0 auto;
-  margin-top: 40px;
 }
 
 .header-menu .main-menu {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-shadow: inset 0 -5px 0 0 var(--basic-dark);
 }
 
@@ -483,17 +492,15 @@ header {
   padding-bottom: 20px;
 }
 
+
 .main-menu .menu-item:first-child {
   padding-left: 53px;
 }
 
-
-/* Неуверен нужно ли свойство ниже, при наличии у первого
-ребенка padding-left 53px */
-
 .main-menu .menu-item:last-child {
   padding-right: 53px;
 }
+
 
  .menu-item a {
   color: var(--basic-white);
@@ -1744,6 +1751,10 @@ li .footer-menu-item-catalog:active {
 }
 
 
+.products-list .product-item:hover {
+  box-shadow: 0 4px 20px 0 var(--special-card-shadow);
+}
+
 .product-item:hover .product-img {
   display: none;
 }
@@ -1922,6 +1933,7 @@ li .footer-menu-item-catalog:active {
   --special-greyblack: rgba(169, 169, 169, 0.3);
   --special-black-oppacity: rgba(0,0,0, 0.3);
   --special-inner-shadow: rgba(0, 0, 0, 0.24);
+  --special-card-shadow: rgba(0, 0, 0, 0.15);
 
   /* Переменные цветов - конец */
 
