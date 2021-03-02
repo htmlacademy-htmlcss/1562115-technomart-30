@@ -148,7 +148,7 @@ header {
 .header-logo .container {
   display: grid;
   grid-template-columns: 220px 270px 300px 150px;
-  grid-template-rows: 40px;
+  grid-template-rows: 42px;
   align-items: center;
 }
 
@@ -173,64 +173,72 @@ header {
 }
 
 
+
+
 /* Стили поиска */
 
-.header-logo .search-form {
-  padding-left: 17px;
-  /* position: relative; */
-  /* height: 100%; */
+
+.search-form .search-label {
+  position: relative;
 }
-
-
 
 .search-form .search-input {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0;
-  z-index: 2;
-  background: transparent;
+  height: 40px;
+  padding-left: 42px;
+  color: var(--basic-black);
+  background-color: var(--basic-dark);
   border: none;
   outline: none;
-  cursor: pointer;
-  /* width: 0; */
-  /* display: none; */
-  /* height: 100%; */
+  width: 226px;
 }
-/*
-.search-input .search-input:focus {
+
+.search-form .search-input::placeholder {
+  color: var(--basic-white);
+}
+
+.search-form .search-input::placeholder:active {
+  opacity: 50%;
+}
+
+
+.search-label .icon-search {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 270px;
-  z-index: 1;
-  background-color: var(--basic-white);
-}  */
-
-
-.icon-search .coordinates-search {
+  top: 1px;
+  left: 17px;
+  width: 17px;
+  height: 17px;
   opacity: 30%;
 }
 
-.icon-search:hover .coordinates-search {
+
+.search-form .search-input:focus {
+  background-color: var(--basic-white);
+}
+
+.search-form .icon-search:hover {
   opacity: 100%;
 }
 
-.icon-search:active .coordinates-search {
+.search-form .icon-search:active {
   opacity: 30%;
 }
 
-.search-form .search-btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 69px;
-  color: var(--basic-white);
-  border: none;
-  padding: 0;
-  margin: 0;
-  background-color: var(--basic-dark);
+
+/* Иконка поиска в фокусе не меняет цвет на красный */
+
+/*
+.search-form .search-input:focus .coordinates-search {
+  fill: var(--basic-red-btn);
+  opacity: 100%;
 }
+
+.icon-search:focus .coordinates-search {
+  fill: var(--basic-red-btn);
+  opacity: 100%;
+} */
+
+
+
 
 
 /* Корзина, закладки */
@@ -644,24 +652,13 @@ header {
   background-color: var(--special-white);
   width: 135px;
   height: 38px;
-  /* padding: auto; */
+
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   margin-left: 22px;
   margin-top: 13px;
-  /* padding: 0; */
-  /* display: block; */
-  /* text-align: center; */
-
-
-
-  /* padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: auto;
-  padding-right: auto;
-  min-width: 135px; */
 }
 
 .catalog-item a:hover,
@@ -813,8 +810,7 @@ padding: 0;
 } */
 
 
-/* Решил переделать на флексы, т.к. красная кнопка тянулась на всю высоту блока.
-Не мог никак ее укротить */
+/* Решил переделать на флексы, т.к. красная кнопка тянулась на всю высоту блока. */
 
 .products .products-content {
   background-color: var(--basic-neutral);
@@ -1013,6 +1009,17 @@ padding: 0;
   height: 145px;
   padding: 0;
   margin: 0;
+}
+
+
+.companies-list .companies-item:hover,
+.companies-list .companies-item:focus {
+  box-shadow: 0 4px 20px 0 var(--special-card-shadow);
+}
+
+
+.companies-list .companies-item:active {
+  opacity: 50%;
 }
 
 
@@ -1868,9 +1875,6 @@ li .footer-menu-item-catalog:active {
 }
 
 
-
-/* Если "разгридить" блок  ниже, то элементы выстроятся в ряд,
-хотя они блочные и должны идти друг под другом. */
 
 .about-perforators .container {
   display: grid;
