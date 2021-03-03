@@ -135,9 +135,9 @@ img {
 
 /* header-logo */
 
-header {
+.main-header {
   background-color: var(--basic-gray);
-  min-height: 320px;
+  padding-bottom: 60px;
 }
 
 .header-logo {
@@ -149,7 +149,7 @@ header {
   display: grid;
   grid-template-columns: 220px 270px 300px 150px;
   grid-template-rows: 42px;
-  align-items: center;
+
 }
 
 
@@ -159,8 +159,6 @@ header {
   box-shadow: inset 0 -5px 0 0 var(--special-inner-shadow);
   height: 47px;
   display: block;
-  /* padding-top: 12px; */
-  /* padding-left: 56px; */
 }
 
 
@@ -251,7 +249,6 @@ header {
 .header-logo .shopping-list {
   display: flex;
   justify-content: space-between;
-  height: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -272,7 +269,7 @@ header {
 
 .shopping-item-bookmarks .bookmarks {
   display: flex;
-  align-items: center;
+  padding-top: 9px;
 }
 
 .shopping-item-bookmarks .bookmarks::before {
@@ -283,6 +280,7 @@ header {
   background-repeat: no-repeat;
   margin-right: 9px;
   opacity: 30%;
+  padding: 0;
 }
 
 
@@ -299,7 +297,7 @@ header {
 
 .shopping-item-basket .basket {
   display: flex;
-  align-items: center;
+  padding-top: 9px;
 }
 
 .shopping-item-basket .basket::before {
@@ -362,11 +360,12 @@ header {
 
 .header-contacts  {
   display: grid;
-  grid-template-columns: 220px 270px 281px;
-  column-gap: 83px;
+  grid-template-columns: 225px 270px 281px;
+  column-gap: 80px;
   width: 940px;
   margin: 0 auto;
   margin-bottom: 40px;
+  padding-top: 46px;
 }
 
 .header-name-address {
@@ -375,21 +374,20 @@ header {
   line-height: 23px;
   color: var(--basic-red-btn);
   margin: 0;
-  padding-top: 37.5px;
+  margin-left: 28px;
 }
 
 .header-contacts .header-address {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-top: 41px;
+
 }
 
 
 .header-address .header-phone {
   display: flex;
   align-items: center;
-  height: 45px;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -397,13 +395,15 @@ header {
   border: 3px solid var(--basic-white);
   box-sizing: border-box;
   margin-bottom: 3px;
-
+  padding: 0;
+  padding-top: 4px;
+  padding-bottom: 5px;
 }
 
 
 .header-address .header-phone::before {
   content: "";
-  width: 17.5px;
+  width: 17px;
   height: 19px;
   background-image: url(../img/icons/icon-phone.svg);
   background-repeat: no-repeat;
@@ -422,19 +422,20 @@ header {
 .header-contacts .sign-up {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 281px;
   margin: 0;
-  padding-top: 41px;
-
 }
 
 .sign-up .login-link {
   width: 121px;
-  height: 45px;
   background-color: var(--basic-white);
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: start;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
 }
 
@@ -455,13 +456,15 @@ header {
 
 
 .sign-up .registration-link {
-  width: 150px;
-  height: 45px;
-  background-color: var(--basic-white);
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  align-self: start;
+  width: 150px;
+  background-color: var(--basic-white);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .sign-up a {
@@ -496,6 +499,7 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 28px;
   box-shadow: inset 0 -5px 0 0 var(--basic-dark);
 }
 
@@ -507,13 +511,15 @@ header {
 }
 
 
+
+/*
 .main-menu .menu-item:first-child {
   padding-left: 53px;
 }
 
 .main-menu .menu-item:last-child {
   padding-right: 53px;
-}
+} */
 
 
  .menu-item a {
@@ -561,8 +567,13 @@ header {
 
 .catalog-menu .catalog-item {
   width: 300px;
-  min-height: 123px;
+  padding-bottom: 21px;
+  padding-right: 50px;
+  box-sizing: border-box;
 }
+
+
+
 
 .catalog-menu .materials {
   grid-column: 1 / 2;
@@ -583,7 +594,6 @@ header {
 
 .catalog-menu .new-item::before {
   content: "New";
-  display: block;
   background-color: var(--basic-red-btn);
   color: var(--basic-white);
   font-size: 14px;
@@ -595,8 +605,8 @@ header {
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: 10px;
   left: 225px;
-  bottom: 85px;
   transform: rotate(45deg);
 }
 
@@ -699,8 +709,16 @@ header {
 
 
 .catalog-slider-list .catalog-slider-perf {
+  /* position: relative; */
   display: block;
 }
+
+.catalog-slider-perf .photo-perforator {
+  /* position: absolute; */
+  /* z-index: -1; */
+}
+
+
 
 .catalog-slider .slider-subtitle {
   position: absolute;
@@ -730,7 +748,6 @@ top: 122px;
 left: 24px;
 background-image: url(../img/icons/icon-btn-left.svg);
 background-repeat: no-repeat;
-/* background-position: 0 0; */
 background-color: transparent;
 width: 22px;
 height: 40px;
@@ -744,7 +761,6 @@ top: 122px;
 right: 20px;
 background-image: url(../img/icons/icon-btn-right.svg);
 background-repeat: no-repeat;
-/* background-position: 0 0; */
 background-color: transparent;
 width: 22px;
 height: 40px;
@@ -756,11 +772,12 @@ padding: 0;
 
 .catalog-slider .slider-btn {
   position: absolute;
+  z-index: 100;
   bottom: 27px;
   left: 24px;
   padding: 11px 46px 9px 46px;
   background-color: var(--basic-red-btn);
-  color: var(--basic-white)
+  color: var(--basic-white);
 }
 
 
@@ -807,17 +824,6 @@ padding: 0;
 }
 
 
-
-/*
-.products .products-content {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 20px;
-} */
-
-
-/* Решил переделать на флексы, т.к. красная кнопка тянулась на всю высоту блока. */
-
 .products .products-content {
   background-color: var(--basic-neutral);
   min-height: 89px;
@@ -831,6 +837,7 @@ padding: 0;
 
 .products-content .title {
   margin: 0;
+  padding-right: 20px;
 }
 
 .products-content .products-link {
@@ -840,13 +847,6 @@ padding: 0;
   background-color: var(--basic-red-btn);
   text-transform: uppercase;
   padding: 11px 24px 9px 24px;
-
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* width: 192px; */
-  /* height: 38px; */
-
 }
 
 .products .products-list {
@@ -872,7 +872,7 @@ padding: 0;
   padding-left: 30px;
   padding-right: 31px;
   margin: 0;
-  height: 318px;
+  min-height: 318px;
 }
 
 .product-item .product-img {
@@ -914,7 +914,6 @@ padding: 0;
   font-weight: 700;
   width: 141px;
   min-height: 38px;
-  /* text-align: center; */
   color: var(--basic-white);
   background-image: url('../img/background/bg-red-btn.svg');
   background-repeat: no-repeat;
@@ -952,7 +951,6 @@ padding: 0;
 
 
 
-
 /* companies */
 
 .companies {
@@ -972,13 +970,13 @@ padding: 0;
   margin-bottom: 20px;
   align-items: center;
   background-color: var(--basic-neutral);
-  /* text-align: center; */
 }
 
 
 
 .companies-content .title {
   margin: 0;
+  padding-right: 20px;
 }
 
 
@@ -988,9 +986,6 @@ padding: 0;
   color: var(--basic-white);
   background-color: var(--basic-red-btn);
   text-transform: uppercase;
-  /* width: 192px; */
-  /* min-height: 38px; */
-  /* text-align: center; */
   padding: 11px 38px 9px 39px;
 }
 
@@ -1005,7 +1000,6 @@ padding: 0;
 }
 
 
-
 .companies-list .companies-item {
   display: grid;
   justify-content: center;
@@ -1016,6 +1010,15 @@ padding: 0;
   padding: 0;
   margin: 0;
 }
+
+.companies-list .companies-item-link {
+  display: flex;
+}
+
+.companies-list .companies-item-link img {
+  width: 100%;
+}
+
 
 
 .companies-list .companies-item:hover,
@@ -1058,9 +1061,6 @@ padding: 0;
   display: grid;
   grid-template-columns: 240px 1fr;
   column-gap: 80px;
-  /* background-image: url(../img/background/bg-shadow.png);
-  background-repeat: no-repeat;
-  background-position: left center; */
 }
 
 
@@ -1120,7 +1120,6 @@ padding: 0;
 /* Гарантия */
 
 .slider-block .slider-block-guarantee {
-  /* display: block; */
   width: 619px;
   min-height: 283px;
   background-image: url(../img/background/bg-guarantee.svg);
@@ -1135,7 +1134,6 @@ padding: 0;
 /* Кредит */
 
 .slider-block .slider-block-credit {
-  /* display: block; */
   width: 619px;
   min-height: 283px;
   background-image: url(../img/background/bg-credit.svg);
@@ -1198,7 +1196,6 @@ background-color: var(--basic-dark);
   color: var(--basic-white);
   background-color: var(--basic-red-btn);
 }
-
 
 
 
@@ -1424,7 +1421,6 @@ li .footer-menu-item-catalog:active {
  .main-footer .footer-block {
   display: grid;
   grid-template-columns: 240px auto 300px;
-  /* column-gap: 50px; */
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
@@ -1768,6 +1764,7 @@ li .footer-menu-item-catalog:active {
 
 .products-list .product-item:hover {
   box-shadow: 0 4px 20px 0 var(--special-card-shadow);
+  /* filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15)); */
 }
 
 .product-item:hover .product-img {
