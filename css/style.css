@@ -714,7 +714,22 @@ img {
   padding: 23px 24px 27px 24px;
 }
 
+
 .catalog-slider-perf .photo-perforator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+
+.catalog-slider-list .catalog-slider-drill {
+  position: relative;
+  padding: 23px 24px 27px 24px;
+}
+
+
+.catalog-slider-drill .photo-drill {
   position: absolute;
   left: 0;
   top: 0;
@@ -769,7 +784,7 @@ padding: 0;
 
 .catalog-slider .slider-btn {
   display: block;
-  font-size: 14;
+  font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   width: 192px;
