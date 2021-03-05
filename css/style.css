@@ -261,11 +261,15 @@ img {
   padding-left: 20px;
 }
 
+
 .shopping-list .shopping-item{
   color: var(--basic-white);
 }
 
 /* Закладки */
+
+
+
 
 .shopping-item-bookmarks .bookmarks {
   display: flex;
@@ -295,6 +299,10 @@ img {
 
 /* Корзина */
 
+.shopping-list .shopping-cart {
+  background-color: var(--basic-red-btn);
+}
+
 .shopping-item-basket .basket {
   display: flex;
   padding-top: 9px;
@@ -320,7 +328,7 @@ img {
 }
 
 
-.shopping-list li:active {
+.shopping-list li:active:not(.shopping-cart) {
   background-color: var(--special-ultra-dark);
 }
 
@@ -360,8 +368,8 @@ img {
 
 .header-contacts  {
   display: grid;
-  grid-template-columns: 225px 270px 281px;
-  column-gap: 80px;
+  grid-template-columns: 230px 270px 281px;
+  column-gap: 75px;
   width: 940px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -1589,30 +1597,66 @@ li .footer-menu-item-catalog:active {
 
 /* header-profile */
 
-.user-name {
-  list-style: none;
+
+.header-contacts.catalog  {
+  display: grid;
+  grid-template-columns: 225px 270px 300px;
+  column-gap: 72px;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 46px;
 }
 
-.order-list {
-  grid-column: 3 / -1;
+.header-contacts .user-name {
   display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  flex-direction: column;
 }
 
+
+.header-contacts .user-name-list {
+  display: flex;
+  align-self: flex-start;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0;
+  margin-bottom: 7px;
+  list-style: none;
+  background-color: var(--basic-white);
+  box-sizing: border-box;
+
+}
 
 .user-name-item .user {
+  display: flex;
+  align-items: center;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+}
+
+.icon-name-user .icon-user {
+  margin-right: 21px;
+}
+
+
+.exit .icon-exit-user {
+  display: flex;
+}
+
+.icon-exit-user .icon-exit {
+  margin-left: 20px;
+  padding-top: 2px;
 }
 
 
 .user-name-item .user:active {
   color: var(--special-gray);
 }
+
 
 .icon-user:hover .coordinates-user,
 .icon-exit:hover .coordinates-exit {
@@ -1626,11 +1670,41 @@ li .footer-menu-item-catalog:active {
 }
 
 
+/* order-list */
+
+
+.header-contacts .order-list {
+  grid-column: 3 / -1;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin: 0;
+}
+
 .order-item a {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-light-dark);
 }
+
+.order-item .account {
+  position: relative;
+}
+
+.order-item .account::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: var( --basic-light-dark);
+  top: 8px;
+  left: -16px;
+  border-radius: 50%;
+}
+
 
 .order-item a:hover,
 .order-item a:focus {
@@ -1802,6 +1876,7 @@ li .footer-menu-item-catalog:active {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 48px;
 }
 
 
@@ -1907,19 +1982,39 @@ li .footer-menu-item-catalog:active {
   opacity: 50%;;
 }
 
+
+/* list-pages */
+
+
+
 .sorting-products .list-pages {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 59px;
 }
 
+.list-pages .list-pages-item {
+  margin-right: 10px;
+}
+
+.list-pages .list-pages-item:last-child {
+  margin-right: 0;
+}
+
+
 .list-pages-item a {
+  display: block;
+  padding: 10px 15px;
   font-family: 'PT Sans', 'Verdana', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
   border: 1px solid var(--special-gray-stroke);
   border-radius: 2px;
+
 }
 
 .list-pages-item .one {
@@ -1928,6 +2023,11 @@ li .footer-menu-item-catalog:active {
   border: none;
 }
 
+.list-pages-item .next {
+  padding-left: 32px;
+  padding-right: 32px;
+  text-transform: uppercase;
+}
 
 /* about-perforators */
 
@@ -1939,10 +2039,23 @@ li .footer-menu-item-catalog:active {
 }
 
 
-
 .about-perforators .container {
   display: grid;
   grid-template-columns: 1fr;
+  padding-top: 64px;
+  padding-bottom: 68px;
+}
+
+
+.about-perforators .heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.about-perforators .text {
+  padding: 0;
+  margin: 0;
 }
 
 
