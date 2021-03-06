@@ -19,7 +19,7 @@
   <header class="main-header">
     <div class="header-logo">
       <div class="container">
-        <a href="#" class="header-logo-link">
+        <a href="index.html" class="header-logo-link">
           <img src="img/content/logo-header.svg" width="108" height="18" alt="Логотип компании Техномарт">
         </a>
 
@@ -119,7 +119,11 @@
 
     <div class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html"><span>Главная</span></a></li>
+        <li class="breadcrumbs-item">
+          <a class="home" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
         <li class="breadcrumbs-item">
           <a href="##">Каталог</a>
         </li>
@@ -137,17 +141,33 @@
         <h2 class="subtitle-filter">Фильтр:</h2>
         <form method="get" action="https://echo.htmlacademy.ru/">
 
-          <fieldset>
+          <fieldset class="filter-item">
             <legend class="title-filter">Цена:</legend>
-            <div class="range-price">
-            </div>
-            <div class="range-value">
-              <input class="range-value-min" type="number" value="0" id="range-value-min" disabled>
-              <label for="range-value-min"></label>
-              <input class="range-value-max" type="number" value="30000" disabled>
-              <label for="range-value-max"></label>
+
+            <div class="range-filter">
+
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+
+              <div class="range-price">
+                <label class="price-min">
+                  <input class="range-price-min" type="text" name="price-min" value="0" disabled>
+                </label>
+                <span>-</span>
+                <label class="price-max">
+                  <input class="range-price-max" type="text" name="price-max" value="30000" disabled>
+                </label>
+              </div>
+
             </div>
           </fieldset>
+
+
 
           <fieldset class="form-filter-makers">
             <legend class="title-filter">Производители:</legend>
@@ -196,7 +216,7 @@
       <div class="perforators">
 
         <section class="filter-list">
-          <h2 class="filter-item">Сортировка:</h2>
+          <h2 class="filter-item subtitle">Сортировка:</h2>
           <ul class="filter-sorting">
             <li class="filter-item">
               <a class="link-filter-price" href="##">По цене</a>
@@ -209,8 +229,23 @@
             </li>
           </ul>
           <ul class="list-btn-sorting">
-            <li><a class="btn-up" href="##"><span>Сортировка по возрастанию</span></a></li>
-            <li><a class="btn-down" href="##"><span>Сортировка по убыванию</span></a></li>
+            <li><a class="btn-up" href="##">
+                <svg class="icon-triangle-up" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="coordinates-triangle" d="M5.5 0L11 10L0 10" fill="#EE3643" />
+                </svg>
+
+                <span class="visually-hidden">Сортировка по возрастанию</span>
+              </a>
+            </li>
+            <li><a class="btn-down" href="##">
+                <svg class="icon-triangle-down" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="coordinates-triangle" d="M5.5 10L0 0H11" fill="#C5C5C5" />
+                </svg>
+                <span class="visually-hidden">Сортировка по убыванию</span>
+              </a>
+            </li>
           </ul>
         </section>
 
