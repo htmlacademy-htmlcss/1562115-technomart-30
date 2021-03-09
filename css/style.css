@@ -2088,6 +2088,7 @@ li .footer-menu-item-catalog:active {
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
+  /* background-color: transparent; */
 }
 
 
@@ -2384,6 +2385,161 @@ li .footer-menu-item-catalog:active {
 }
 
 
+/* Модальные окна */
+/* Общие свойства */
+
+.modal {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+color: var(--basic-black);
+background-color: var(--basic-white);
+}
+
+
+/* modal-feedback */
+
+.modal-feedback {
+  display: none;
+  bottom: 352px;
+  top: auto;
+  width: 620px;
+  padding-top: 39px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 20px 0 var(--special-card-shadow);
+  border-top: 7px solid var(--basic-red-btn);
+}
+
+
+.wrapper-write-us {
+  width: 460px;
+  margin: 0 auto;
+}
+
+
+
+.writeus-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.writeus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.writeus-item label {
+  margin-bottom: 11px;
+}
+
+
+.writeus-item input[type='text'],
+.writeus-item input[type='email'] {
+  box-sizing: border-box;
+  width: 220px;
+  padding-top: 7px;
+  padding-left: 12px;
+  padding-bottom: 7px;
+  padding-right: 8px;
+  font-family: 'PT Sans', 'Verdana', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--special-neutral-gray);
+  border: 2px solid var(--special-gray);
+  border-radius: 2px;
+  margin-bottom: 13px;
+}
+
+.text-your-letter {
+  display: block;
+  margin-bottom: 11px;
+
+}
+
+.write-here {
+  font-family: 'PT Sans', 'Verdana', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  color: var(--special-neutral-gray);
+  border: 2px solid var(--special-gray);
+  border-radius: 2px;
+  width: 100%;
+  min-height: 114px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+
+.wrapper-btn-letter {
+  width: 620px;
+  padding: 37px 80px;
+  background-color: var( --special-light-beige);
+  box-sizing: border-box;
+}
+
+.btn-send-letter {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-family: 'Cuprum', 'Verdana', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--basic-red-btn);
+  }
+
+
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 11px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  cursor: pointer;
+  background-image: url(../img/icons/icon-close.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+}
+
+
+/* modal-map */
+
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 449px;
+  border-top: 7px solid var(--basic-red-btn);
+}
+
+.modal-map img {
+  display: block;
+}
+
+.modal-map iframe {
+  border: none;
+}
 
 
 /* Переменные цветов - начало */
@@ -2408,6 +2564,7 @@ li .footer-menu-item-catalog:active {
   --special-light-gray: #f2f6f8;
   --special-gray-stroke: #e5e5e5;
   --special-gray-radio: #b5b5b5;
+  --special-light-beige: #f4f4f4; /* задний фон красной кнопки формы обр.связи */
 
   --special-red-btn: #ba2732;
   --special-dark-red: #ca2c37;
