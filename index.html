@@ -127,7 +127,7 @@
         <section class="catalog-slider">
           <h2 class="visually-hidden">Слайдер</h2>
           <ul class="catalog-slider-list">
-            <li class="catalog-slider-perf">
+            <li class="catalog-slider-perf slider-item-show">
               <img class="photo-perforator" src="img/content/slider-perf.jpg" width="620" height="266"
                 alt="Изображение рабочего в каске, перчатках и с перфоратором в руках">
               <h3 class="slider-subtitle">Перфораторы</h3>
@@ -314,24 +314,24 @@
 
             <div class="slider-block-item slider-block-descr slider-block-delivery">
               <h3 class="title">Доставка</h3>
-              <p class="text text-delivery">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду
-                совершенно бесплатно! <br>
-                Ведь мы неплохо заработаем, <br>
+              <p class="text text-delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
             </div>
 
             <div class="slider-block-item slider-block-descr slider-block-guarantee">
               <h3 class="title">Гарантия</h3>
-              <p class="text text-guarantee">Если купленный у нас товар поломается или заискрит,<br>
-                а также в случае пожара, спровоцированного его<br>
-                возгоранием, вы всегда можете быть уверены в нашей<br>
-                гарантии. Мы обменяем сгоревший товар на новый.<br>
+              <p class="text text-guarantee">Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его
+                возгоранием, вы всегда можете быть уверены в нашей
+                гарантии. Мы обменяем сгоревший товар на новый.
                 Дом уж восстановите как-нибудь сами.</p>
             </div>
 
             <div class="slider-block-item slider-block-descr slider-block-credit">
               <h3 class="title">Кредит</h3>
-              <p class="text text-credit">Залезть в долговую яму стало проще!<br>
+              <p class="text text-credit">Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь.</p>
               <a class="credit-btn" href="#">Отправить заявку</a>
             </div>
@@ -428,7 +428,6 @@
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
-
       </ul>
 
       <div class="footer-feedback">
@@ -441,10 +440,50 @@
       </div>
     </div>
 
-
-
   </footer>
 
+
+
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="write-to-us" method="POST" action="https://echo.htmlacademy.ru">
+
+      <div class="wrapper-write-us">
+        <ul class="writeus-list">
+          <li class="writeus-item">
+            <label for="your-name">Ваше имя:</label>
+            <input type="text" id="your-name" name="name" placeholder="Имя Фамилия">
+          </li>
+
+          <li class="writeus-item">
+            <label for="your-email">Ваш e-mail:</label>
+            <input type="email" id="your-email" name="email" placeholder="email@example.com">
+          </li>
+        </ul>
+
+        <label class="text-your-letter" for="text-letter">Текст письма:</label>
+        <textarea class="write-here" name="text-letter" id="text-letter" placeholder="В свободной форме"></textarea>
+      </div>
+
+      <div class="wrapper-btn-letter">
+        <button class="btn-send-letter" type="button">Отправить</button>
+      </div>
+    </form>
+
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716382894!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615303411581!5m2!1sru!2sru"
+      width="943" height="449" allowfullscreen
+      title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </iframe>
+
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 
 </body>
 
