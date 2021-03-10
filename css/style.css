@@ -2566,6 +2566,78 @@ background-color: var(--basic-white);
   border: none;
 }
 
+/* modal-add-product */
+
+.modal-add-product {
+display: block;
+top: 30%;
+bottom: auto;
+width: 620px;
+box-sizing: border-box;
+box-shadow: 0 4px 20px 0 var(--special-card-shadow);
+border-top: 7px solid var(--basic-red-btn);
+}
+
+.title-add-product {
+  position: relative;
+  font-family: 'Cuprum', 'Verdana', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  padding-top: 66px;
+  padding-bottom: 67px;
+  text-align: center;
+}
+
+.title-add-product::before {
+  position: absolute;
+  content: '';
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/icons/icon-mark.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 48px;
+  left: 81px;
+}
+
+.btn-add-product {
+  display: flex;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 114px;
+  padding-right: 112px;
+  width: 100%;
+  background-color: var(--special-background-gray);
+  box-sizing: border-box;
+}
+
+
+.btn-add-product a {
+  font-family: 'Cuprum', 'verdana', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
+  padding-top: 11px;
+  padding-bottom: 9px;
+  width: 192px;
+}
+
+.btn-add-product .btn-order {
+  color: var(--basic-white);
+  background-color: var(--basic-red-btn);
+  margin-right: 10px;
+}
+
+.btn-add-product .btn-continue {
+  background-color: var(--basic-white);
+}
+
 
 /* Переменные цветов - начало */
 
@@ -2587,9 +2659,11 @@ background-color: var(--basic-white);
   --special-dark-gray: #b7bfc8; /* иконка телефона в хедере */
   --special-neutral-gray: #a9a9a9;
   --special-light-gray: #f2f6f8;
+  --special-background-gray: #f1f1f1;
   --special-gray-stroke: #e5e5e5;
   --special-gray-radio: #b5b5b5;
   --special-light-beige: #f4f4f4; /* задний фон красной кнопки формы обр.связи */
+
 
   --special-red-btn: #ba2732;
   --special-dark-red: #ca2c37;
