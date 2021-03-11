@@ -2415,9 +2415,7 @@ li .footer-menu-item-catalog:active {
 
 .modal {
 position: fixed;
-top: 0;
 right: 0;
-bottom: 0;
 left: 0;
 margin: auto;
 color: var(--basic-black);
@@ -2429,8 +2427,8 @@ background-color: var(--basic-white);
 
 .modal-feedback {
   display: none;
-  bottom: 352px;
-  top: auto;
+  top: 50%;
+  transform: translateY(-50%);
   width: 620px;
   padding-top: 39px;
   box-sizing: border-box;
@@ -2553,6 +2551,8 @@ background-color: var(--basic-white);
 
 .modal-map {
   display: none;
+  top:  50%;
+  transform: translateY(-50%);
   width: 943px;
   height: 449px;
   border-top: 7px solid var(--basic-red-btn);
@@ -2569,13 +2569,13 @@ background-color: var(--basic-white);
 /* modal-add-product */
 
 .modal-add-product {
-display: block;
-top: 30%;
-bottom: auto;
-width: 620px;
-box-sizing: border-box;
-box-shadow: 0 4px 20px 0 var(--special-card-shadow);
-border-top: 7px solid var(--basic-red-btn);
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 620px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 20px 0 var(--special-card-shadow);
+  border-top: 7px solid var(--basic-red-btn);
 }
 
 .title-add-product {
@@ -2605,6 +2605,7 @@ border-top: 7px solid var(--basic-red-btn);
 
 .btn-add-product {
   display: flex;
+  justify-content: space-between;
   padding-top: 37px;
   padding-bottom: 37px;
   padding-left: 114px;
@@ -2631,7 +2632,6 @@ border-top: 7px solid var(--basic-red-btn);
 .btn-add-product .btn-order {
   color: var(--basic-white);
   background-color: var(--basic-red-btn);
-  margin-right: 10px;
 }
 
 .btn-add-product .btn-continue {
