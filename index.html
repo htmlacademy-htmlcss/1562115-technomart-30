@@ -26,14 +26,14 @@
           <label class="search-label">
             <span class="visually-hidden">Поиск</span>
             <input class="search-input" type="search" name="search" placeholder="Поиск:">
-            <svg class="icon-search" width="17" height="17" viewBox="0 0 17 17" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon-search" aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="coordinates-search" fill-rule="evenodd" clip-rule="evenodd"
                 d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
                 fill="white" />
             </svg>
           </label>
-          <button class="visually-hidden" type="submit"></button>
+          <button class="visually-hidden" type="submit">Поиск</button>
         </form>
         <ul class="shopping-list">
           <li class="shopping-item-bookmarks"><a class="shopping-item bookmarks" href="#">
@@ -55,14 +55,15 @@
 
 
       <div class="header-address">
-        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a class="header-phone" href="tel:+78125550555" aria-label="Контактный телефон +7 (812) 555-05-55">+7 (812)
+          555-05-55</a>
         <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </div>
 
       <div class="sign-up">
         <a class="login-link" href="##">
-          <svg class="icon-login" width="21" height="17" viewBox="0 0 21 17" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="icon-login" aria-hidden="true" focusable="false" width="21" height="17" viewBox="0 0 21 17"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="coordinates-login" d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5" />
             <path class="coordinates-login"
               d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"
@@ -89,7 +90,6 @@
   </header>
 
 
-
   <main>
     <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <section class="catalog container">
@@ -100,27 +100,27 @@
 
         <div class="catalog-item materials new-item">
           <h3>Материалы</h3>
-          <a href="##">На любой вкус</a>
+          <a href="##" aria-label="Перейти в раздел На любой вкус">На любой вкус</a>
         </div>
 
-        <div class="catalog-item tools">
+        <div class=" catalog-item tools">
           <h3>Инструмент</h3>
-          <a href="##">На все случаи</a>
+          <a href="##" aria-label="Перейти в раздел На все случаи">На все случаи</a>
         </div>
 
         <div class="catalog-item technic">
           <h3>Техника</h3>
-          <a href="##">Для стройки</a>
+          <a href="##" aria-label="Перейти в раздел Для стройки">Для стройки</a>
         </div>
 
         <div class="catalog-item discounts">
           <h3>Скидки 50%</h3>
-          <a href="##">На 350 товаров</a>
+          <a href="##" aria-label="Перейти в раздел На 350 товаров">На 350 товаров</a>
         </div>
 
         <div class="catalog-item delivery">
           <h3>Доставка</h3>
-          <a href="##">Бесплатно</a>
+          <a href="##" aria-label="Перейти в раздел Бесплатно">Бесплатно</a>
         </div>
 
 
@@ -144,13 +144,13 @@
             </li>
           </ul>
 
-          <button type="button" class="catalog-btn-left"></button>
+          <button type="button" class="catalog-btn-left" aria-label="Предыдущий слайд"></button>
 
-          <button type="button" class="catalog-btn-right"></button>
+          <button type="button" class="catalog-btn-right" aria-label="Следующий слайд"></button>
 
           <div class="catalog-slider-btn">
-            <button class="circle-btn-white" type="button"></button>
-            <button class="circle-btn-red" type="button"></button>
+            <button class="circle-btn-white" type="button" aria-label="Первый слайд"></button>
+            <button class="circle-btn-red" type="button" aria-label="Второй слайд"></button>
           </div>
 
         </section>
@@ -160,12 +160,13 @@
     <section class="products container">
       <div class="products-content">
         <h2 class="title">Популярные товары:</h2>
-        <a class="products-link" href="##">Все популярные товары</a>
+        <a class="products-link" href="##" aria-label="Посмотреть список самых популярных товаров">Все популярные
+          товары</a>
       </div>
 
 
       <ul class="products-list">
-        <li class="product-item">
+        <li class="product-item bfg-9000">
           <img class="product-img" src="img/content/bfg-9000.png" width="184" height="164"
             alt="Модель перфоратора Bosch BFG 9000">
           <h3>
@@ -175,12 +176,12 @@
           <p class="product-price">25500 Р.</p>
 
           <div class="product-aside">
-            <a class="btn-buy" href="##">Купить</a>
-            <a class="btn-bookmarks" href="##">В закладки</a>
+            <a class="btn-buy" href="##" aria-label="Купить выбранный товар">Купить</a>
+            <a class="btn-bookmarks" href="##" aria-label="Отложить в закладки выбранный товар">В закладки</a>
           </div>
         </li>
 
-        <li class="product-item new">
+        <li class="product-item new bfg-3000">
           <img class="product-img" src="img/content/bfg-3000.png" width="127" height="112"
             alt="Модель перфоратора Bosch BFG 3000">
           <h3>
@@ -190,12 +191,12 @@
           <p class="product-price">15500 Р.</p>
 
           <div class="product-aside">
-            <a class="btn-buy" href="##">Купить</a>
-            <a class="btn-bookmarks" href="##">В закладки</a>
+            <a class="btn-buy" href="##" aria-label="Купить выбранный товар">Купить</a>
+            <a class="btn-bookmarks" href="##" aria-label="Отложить в закладки выбранный товар">В закладки</a>
           </div>
         </li>
 
-        <li class="product-item">
+        <li class="product-item bfg-6000">
           <img class="product-img" src="img/content/bfg-6000.png" width="144" height="128"
             alt="Модель перфоратора Bosch BFG 6000">
           <h3>
@@ -205,12 +206,12 @@
           <p class="product-price">25500 Р.</p>
 
           <div class="product-aside">
-            <a class="btn-buy" href="##">Купить</a>
-            <a class="btn-bookmarks" href="##">В закладки</a>
+            <a class="btn-buy" href="##" aria-label="Купить выбранный товар">Купить</a>
+            <a class="btn-bookmarks" href="##" aria-label="Отложить в закладки выбранный товар">В закладки</a>
           </div>
         </li>
 
-        <li class="product-item new">
+        <li class="product-item new bfg-2000">
           <img class="product-img" src="img/content/bfg-2000.png" width="127" height="112"
             alt="Модель перфоратора Bosch BFG 2000">
           <h3>
@@ -220,8 +221,8 @@
           <p class="product-price">12500 Р.</p>
 
           <div class="product-aside">
-            <a class="btn-buy" href="##">Купить</a>
-            <a class="btn-bookmarks" href="##">В закладки</a>
+            <a class="btn-buy" href="##" aria-label="Купить выбранный товар">Купить</a>
+            <a class="btn-bookmarks" href="##" aria-label="Отложить в закладки выбранный товар">В закладки</a>
           </div>
         </li>
       </ul>
@@ -232,7 +233,7 @@
     <section class="companies container">
       <div class="companies-content">
         <h2 class="title">Популярные производители:</h2>
-        <a class="companies-link" href="##">Все производители</a>
+        <a class="companies-link" href="##" aria-label="Показать всех производителей">Все производители</a>
       </div>
 
 
@@ -275,7 +276,7 @@
 
         <li class="companies-item">
           <a class="companies-item-link" href="##">
-            <img src="img/content/logo-aeg.svg" width="151" height="98" alt="Логотип компании Aeg Power Solitions">
+            <img src="img/content/logo-aeg.png" width="151" height="98" alt="Логотип компании Aeg Power Solitions">
           </a>
         </li>
 
@@ -300,13 +301,14 @@
 
           <ul class="slider-list">
             <li class="slider-list-item">
-              <button class="slider-list-btn slider-list-btn-active" type="button">Доставка</button>
+              <button class="slider-list-btn slider-list-btn-active" type="button"
+                aria-label="Раздел о нашей доставке">Доставка</button>
             </li>
             <li class="slider-list-item">
-              <button class="slider-list-btn" type="button">Гарантия</button>
+              <button class="slider-list-btn" type="button" aria-label="Раздел о нашей гарантии">Гарантия</button>
             </li>
             <li class="slider-list-item">
-              <button class="slider-list-btn" type="button">Кредит</button>
+              <button class="slider-list-btn" type="button" aria-label="Раздел о продаже в кредит">Кредит</button>
             </li>
           </ul>
 
@@ -367,7 +369,7 @@
             <img class="contacts-map" src="img/content/map.svg" width="300" height="158"
               alt="Карта местонаходения компании Техномарт, по адресу: г. Санкт-Петербург, ул. Б. Конюшенная д. 19/8 ">
           </a>
-          <a class="help-btn" href="##">Заблудились? Напишите нам!</a>
+          <a class="help-btn" href="##" aria-label="Показать форму обратной связи">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -383,7 +385,8 @@
             <img src="img/content/logo-footer.svg" width="138" height="23" alt="Логотип компании Техномарт">
           </a>
           <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <a class="footer-phone" href="tel:+78125550555" aria-label="Контактный телефон +7 (812) 555-05-55">+7 (812)
+            555-05-55</a>
         </div>
 
         <div class="footer-menu">
@@ -432,10 +435,11 @@
 
       <div class="footer-feedback">
         <p class="feedback-text">Обратная связь:
-          <a class="feedback-link" href="##">mail@htmlacademy.ru</a>
+          <a class="feedback-link" href="##" aria-label="Отправить нам письмо на эту почту">mail@htmlacademy.ru</a>
         </p>
         <p class="author-text">Разработано —
-          <a class="author-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a class="author-link" href="https://htmlacademy.ru/intensive/htmlcss"
+            aria-label="Кем разработан данный ресурс">htmlacademy.ru</a>
         </p>
       </div>
     </div>
@@ -444,7 +448,7 @@
 
 
 
-  <section class="modal modal-feedback">
+  <section class="modal modal-feedback modal-show">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="write-to-us" method="POST" action="https://echo.htmlacademy.ru">
 
@@ -474,7 +478,7 @@
   </section>
 
 
-  <section class="modal modal-map">
+  <section class="modal modal-map modal-show">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716382894!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615303411581!5m2!1sru!2sru"
