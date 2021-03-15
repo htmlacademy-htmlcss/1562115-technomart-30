@@ -218,6 +218,18 @@ img {
   opacity: 30%;
 }
 
+/*
+
+.icon-search .coordinates-search {
+  fill: var(--basic-white);
+}
+
+
+.search-input:focus ~ .coordinates-search {
+  fill: var(--basic-red-btn);
+  opacity: 100%;
+} */
+
 
 /* Иконка поиска в фокусе не меняет цвет на красный */
 
@@ -444,13 +456,30 @@ img {
 }
 
 
+
+
+
+
+
+.sign-up a:hover svg,
+.sign-up a:focus svg {
+  fill: var(--special-extra-dark-grey);
+}
+
+.sign-up a:active svg {
+  fill: var(--special-gray);
+}
+
+
+
+/*
 .icon-login:hover .coordinates-login {
   fill: var(--special-extra-dark-grey);
 }
 
 .icon-login:active .coordinates-login {
   fill: var(--special-gray);
-}
+} */
 
 
 .sign-up .registration-link {
@@ -806,8 +835,8 @@ padding: 0;
 
 .catalog-slider-btn {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 220px;
+  left: 295px;
   display: flex;
 }
 
@@ -820,6 +849,10 @@ padding: 0;
   height: 10px;
 }
 
+.catalog-slider-btn .circle-btn-red {
+  top: 0;
+  left: 9px;
+}
 
 
 .catalog-slider-btn .circle-btn-white:after {
@@ -828,8 +861,8 @@ padding: 0;
   height: 10px;
   background-color: var(--basic-white);
   position: absolute;
-  top: 220px;
-  left: 295px;
+  top: 0;
+  left: 1px;
   border-radius: 50%;
 }
 
@@ -839,8 +872,8 @@ padding: 0;
   height: 6px;
   background-color: var(--basic-red-btn);
   position: absolute;
-  top: 220px;
-  left: 302px;
+  top: 0;
+  left: 1px;
   border-radius: 50%;
   border: 2px solid var(--basic-white);
 }
