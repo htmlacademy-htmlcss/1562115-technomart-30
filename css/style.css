@@ -873,6 +873,8 @@ padding: 0;
   padding-right: 20px;
 }
 
+
+
 .products-content .products-link {
   font-size: 14px;
   line-height: 18px;
@@ -882,6 +884,17 @@ padding: 0;
   padding: 11px 24px 9px 24px;
   margin-top: 24px;
 }
+
+
+.products-content .products-link:hover,
+.products-content .products-link:focus {
+  background-color: var(--special-dark-red);
+}
+
+.products-content .products-link:active {
+  background-color: var(--special-red-btn);
+}
+
 
 .products .products-list {
   display: grid;
@@ -1085,6 +1098,15 @@ padding: 0;
   background-color: var(--basic-red-btn);
   text-transform: uppercase;
   padding: 8px 38px 9px 39px;
+}
+
+.companies-content .companies-link:hover,
+.companies-content .companies-link:focus {
+  background-color: var(--special-dark-red);
+}
+
+.companies-content .companies-link:active {
+  background-color: var(--special-red-btn);
 }
 
 
@@ -1397,6 +1419,15 @@ background-color: var(--basic-dark);
 }
 
 
+.about-us-desc .about-us-btn:hover,
+.about-us-desc .about-us-btn:focus {
+  background-color: var(--special-dark-red);
+}
+
+.about-us-desc .about-us-btn:active {
+  background-color: var(--special-red-btn);
+}
+
 /* Контакты */
 
 
@@ -1434,6 +1465,14 @@ background-color: var(--basic-dark);
   background-color: var(--basic-red-btn);
 }
 
+.contacts .help-btn:hover,
+.contacts .help-btn:focus {
+  background-color: var(--special-dark-red);
+}
+
+.contacts .help-btn:active {
+  background-color: var(--special-red-btn);
+}
 
 
 /* footer */
@@ -2644,7 +2683,14 @@ background-color: var(--basic-white);
   background-color: var(--basic-red-btn);
   }
 
+  .btn-send-letter:hover,
+  .btn-send-letter:focus {
+    background-color: var(--special-dark-red);
+  }
 
+  .btn-send-letter:active {
+    background-color: var(--special-red-btn);
+  }
 
 .modal-close {
   position: absolute;
@@ -2747,6 +2793,15 @@ background-color: var(--basic-white);
 .btn-add-product .btn-order {
   color: var(--basic-white);
   background-color: var(--basic-red-btn);
+}
+
+.btn-add-product .btn-order:hover,
+.btn-add-product .btn-order:focus {
+  background-color: var(--special-dark-red);
+}
+
+.btn-add-product .btn-order:active {
+  background-color: var(--special-red-btn);
 }
 
 .btn-add-product .btn-continue {
