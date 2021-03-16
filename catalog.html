@@ -10,8 +10,8 @@
   <link rel="apple-touch-icon" href="img/favicon/apple180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
 </head>
 
@@ -28,11 +28,10 @@
           <label class="search-label">
             <span class="visually-hidden">Поиск</span>
             <input class="search-input" type="search" name="search" placeholder="Поиск:">
-            <svg class="icon-search" aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="coordinates-search" fill-rule="evenodd" clip-rule="evenodd"
-                d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
-                fill="none" />
+            <svg class="icon-search" aria-hidden="true" width="17" height="17" viewBox="0 0 17 17"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="coordinates-search" clip-rule="evenodd"
+                d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
             </svg>
           </label>
           <button class="visually-hidden" type="submit" tabindex="-1">Поиск</button>
@@ -505,7 +504,7 @@
 
   </footer>
 
-  <section class="modal modal-add-product modal-show">
+  <section class="modal modal-add-product">
     <h3 class="title-add-product">Товар добавлен в корзину!</h3>
     <div class="btn-add-product">
       <a class="btn-order" href="#">Оформить заказ</a>
