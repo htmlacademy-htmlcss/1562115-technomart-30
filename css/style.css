@@ -2267,9 +2267,13 @@ li .footer-menu-item-catalog:active {
   display: block;
 }
 
+/* Наведение */
+
 .filter-input-checkbox:hover + label::before {
   border-color: var(--special-gray-radio);
 }
+
+/* Фокус */
 
 .filter-input-checkbox:focus + label::before {
   border: 1px solid var( --basic-dark);
@@ -2288,6 +2292,17 @@ li .footer-menu-item-catalog:active {
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
+}
+
+
+/* Блокирование */
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 30%;
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  opacity: 30%;
 }
 
 
