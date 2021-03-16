@@ -456,17 +456,13 @@ img {
 }
 
 
-
-
-
-
-
-.sign-up a:hover svg,
-.sign-up a:focus svg {
+ .login-link:hover .coordinates-login,
+ .login-link:focus .coordinates-login {
   fill: var(--special-extra-dark-grey);
 }
 
-.sign-up a:active svg {
+
+.login-link:active .coordinates-login {
   fill: var(--special-gray);
 }
 
@@ -1847,14 +1843,22 @@ li .footer-menu-item-catalog:active {
 }
 
 
-.icon-user:hover .coordinates-user,
-.icon-exit:hover .coordinates-exit {
+.icon-name-user:hover .coordinates-user,
+.icon-name-user:focus .coordinates-user {
+  fill: var(--special-extra-dark-grey);
+}
+
+.icon-name-user:active .coordinates-user {
+  fill: var(--special-gray);
+}
+
+.icon-exit-user:hover .coordinates-exit,
+.icon-exit-user:focus .coordinates-exit {
   fill: var(--special-extra-dark-grey);
 }
 
 
-.icon-user:active .coordinates-user,
-.icon-exit:active .coordinates-exit {
+.icon-exit-user:active .coordinates-exit {
   fill: var(--special-gray);
 }
 
