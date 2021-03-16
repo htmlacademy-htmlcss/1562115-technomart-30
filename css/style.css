@@ -1,4 +1,65 @@
 
+/* Переменные цветов - начало */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #293449;
+  --basic-light-dark: #32425c;
+  --basic-extra-dark: #1d2739;
+  --basic-white: #ffffff;
+  --basic-red-btn: #ee3643;
+  --basic-green: #63a63e;
+  --basic-neutral: #f9f5f0;
+  --basic-gray-bg: #f1f5f7;
+  --basic-yellow: #ffbf47;
+  --basic-light-beige: #f7f3ec;
+  --basic-gray:#f3f7f9;
+
+  --special-gray: #c5c5c5; /* иконка входа в учетную запись */
+  --special-dark-gray: #b7bfc8; /* иконка телефона в хедере */
+  --special-neutral-gray: #a9a9a9;
+  --special-light-gray: #f2f6f8;
+  --special-background-gray: #f1f1f1;
+  --special-gray-stroke: #e5e5e5;
+  --special-gray-radio: #b5b5b5;
+  --special-light-beige: #f4f4f4; /* задний фон красной кнопки формы обр.связи */
+
+
+  --special-red-btn: #ba2732;
+  --special-dark-red: #ca2c37;
+  --special-green-btn: #5fbb2d;
+  --special-green-btn-shadow: #367315;
+  --special-green-btn-click: #518534;
+  --special-extra-dark-grey: #3d546f; /* иконки входа, выхода и логина при ховере */
+
+  --special-blue: #3bbce3;
+  --special-purple: #dc91d8;
+  --special-green: #8ed78f;
+  --special-yellow: #ffd180;
+  --special-light-yellow: #ffc047;
+  --special-extra-light: #eaeaea; /* обводка(stroke) у карточек товара */
+  --special-dark: #212a3a; /* бэкграунд социальных сетей*/
+  --special-dark-hyphen: #444444; /* Дефис в каталоге */
+  --special-ultra-dark: #161d29;
+  --special-button-border: #405069;
+  --special-line-filter: #d7dcde;
+  --special-light-green: #00ca74;
+  --special-toggle-color: #ababab;
+
+  --special-white-middle: rgb(255,255,255, 0.5);
+  --special-white: rgba(255,255,255, 0.3);
+  --special-greylight: rgba(197,197,197, 0.3);
+  --special-greyblack: rgba(169, 169, 169, 0.3);
+  --special-black-oppacity: rgba(0,0,0, 0.3);
+  --special-inner-shadow: rgba(0, 0, 0, 0.24);
+  --special-card-shadow: rgba(0, 0, 0, 0.15);
+  --special-toggle-opacity: rgba(171, 171, 171, 0.3);
+  --special-dark-opacity: rgba(0, 0, 0, 0.1);
+}
+  /* Переменные цветов - конец */
+
+
+
 /* Шрифты */
 
 @font-face {
@@ -203,41 +264,40 @@ img {
   width: 17px;
   height: 17px;
   opacity: 30%;
+  fill: var(--basic-white);
 }
+
+
+.search-input:focus .icon-search {
+  fill: var(--basic-red-btn);
+  opacity: 100%;
+}
+
 
 
 .search-form .search-input:focus {
   background-color: var(--basic-white);
 }
 
+
 .search-form .icon-search:hover {
   opacity: 100%;
 }
 
-.search-form .icon-search:active {
-  opacity: 30%;
-}
 
-/*
-
-.icon-search .coordinates-search {
-  fill: var(--basic-white);
-}
-
-
-.search-input:focus ~ .coordinates-search {
+.search-input:focus ~ .icon-search {
   fill: var(--basic-red-btn);
   opacity: 100%;
-} */
+}
 
 
 /* Иконка поиска в фокусе не меняет цвет на красный */
 
-/*
-.search-form .search-input:focus .coordinates-search {
-  fill: var(--basic-red-btn);
+
+.search-form .search-input:focus {
+  background-color: var(--basic-white);
   opacity: 100%;
-} */
+}
 
 
 
@@ -468,15 +528,6 @@ img {
 
 
 
-/*
-.icon-login:hover .coordinates-login {
-  fill: var(--special-extra-dark-grey);
-}
-
-.icon-login:active .coordinates-login {
-  fill: var(--special-gray);
-} */
-
 
 .sign-up .registration-link {
   padding-top: 12px;
@@ -529,17 +580,6 @@ img {
   padding-top: 16px;
   padding-bottom: 20px;
 }
-
-
-
-/*
-.main-menu .menu-item:first-child {
-  padding-left: 53px;
-}
-
-.main-menu .menu-item:last-child {
-  padding-right: 53px;
-} */
 
 
  .menu-item a {
@@ -825,7 +865,6 @@ padding: 0;
 .catalog-slider .slider-btn:active {
   background-color: var(--special-red-btn);
 }
-
 
 
 
@@ -1287,7 +1326,6 @@ padding: 0;
 /* Гарантия */
 
 .slider-block .slider-block-guarantee {
-  /* display: block; */
   width: 619px;
   min-height: 283px;
   background-image: url(../img/background/bg-guarantee.svg);
@@ -1304,7 +1342,6 @@ padding: 0;
 
 
 .slider-block .slider-block-credit {
-  /* display: block; */
   width: 619px;
   min-height: 283px;
   background-image: url(../img/background/bg-credit.svg);
@@ -1739,23 +1776,28 @@ li .footer-menu-item-catalog:active {
   color: var(--special-yellow);
 }
 
-.footer-feedback
-.feedback-link:active {
-  color: var(--basic-red-btn);
-}
 
 .footer-feedback .feedback-link:hover {
   text-decoration: underline;
 }
 
 .footer-feedback
-.author-link:active {
+.feedback-link:active {
   color: var(--basic-red-btn);
+  text-decoration: none;
 }
+
 
 .footer-feedback .author-link:hover {
   text-decoration: underline;
 }
+
+.footer-feedback
+.author-link:active {
+  color: var(--basic-red-btn);
+  text-decoration: none;
+}
+
 
 
 
@@ -1829,7 +1871,6 @@ li .footer-menu-item-catalog:active {
 
 .exit .icon-exit-user {
   display: flex;
-  /* display: block; */
 }
 
 .icon-exit-user .icon-exit {
@@ -2277,6 +2318,7 @@ li .footer-menu-item-catalog:active {
   border-color: var(--special-gray-radio);
 }
 
+
 /* Фокус */
 
 .filter-input-checkbox:focus + label::before {
@@ -2455,7 +2497,6 @@ li .footer-menu-item-catalog:active {
 
 
 
-
 .product-item .btn-buy {
   display: block;
   font-size: 14px;
@@ -2591,7 +2632,6 @@ li .footer-menu-item-catalog:active {
   background-color: var(--basic-gray-bg);
   margin: 0;
   padding: 0;
-
 }
 
 
@@ -2644,7 +2684,7 @@ background-color: var(--basic-white);
 }
 
 
-.modal-show {
+.modal.modal-show {
   display: block;
 }
 
@@ -2668,7 +2708,6 @@ background-color: var(--basic-white);
   width: 460px;
   margin: 0 auto;
 }
-
 
 
 .writeus-list li {
@@ -2888,63 +2927,5 @@ background-color: var(--basic-white);
 }
 
 
-/* Переменные цветов - начало */
-
-:root {
-  --basic-black: #000000;
-  --basic-dark: #293449;
-  --basic-light-dark: #32425c;
-  --basic-extra-dark: #1d2739;
-  --basic-white: #ffffff;
-  --basic-red-btn: #ee3643;
-  --basic-green: #63a63e;
-  --basic-neutral: #f9f5f0;
-  --basic-gray-bg: #f1f5f7;
-  --basic-yellow: #ffbf47;
-  --basic-light-beige: #f7f3ec;
-  --basic-gray:#f3f7f9;
-
-  --special-gray: #c5c5c5; /* иконка входа в учетную запись */
-  --special-dark-gray: #b7bfc8; /* иконка телефона в хедере */
-  --special-neutral-gray: #a9a9a9;
-  --special-light-gray: #f2f6f8;
-  --special-background-gray: #f1f1f1;
-  --special-gray-stroke: #e5e5e5;
-  --special-gray-radio: #b5b5b5;
-  --special-light-beige: #f4f4f4; /* задний фон красной кнопки формы обр.связи */
-
-
-  --special-red-btn: #ba2732;
-  --special-dark-red: #ca2c37;
-  --special-green-btn: #5fbb2d;
-  --special-green-btn-shadow: #367315;
-  --special-green-btn-click: #518534;
-  --special-extra-dark-grey: #3d546f; /* иконки входа, выхода и логина при ховере */
-
-  --special-blue: #3bbce3;
-  --special-purple: #dc91d8;
-  --special-green: #8ed78f;
-  --special-yellow: #ffd180;
-  --special-light-yellow: #ffc047;
-  --special-extra-light: #eaeaea; /* обводка(stroke) у карточек товара */
-  --special-dark: #212a3a; /* бэкграунд социальных сетей*/
-  --special-dark-hyphen: #444444; /* Дефис в каталоге */
-  --special-ultra-dark: #161d29;
-  --special-button-border: #405069;
-  --special-line-filter: #d7dcde;
-  --special-light-green: #00ca74;
-  --special-toggle-color: #ababab;
-
-  --special-white-middle: rgb(255,255,255, 0.5);
-  --special-white: rgba(255,255,255, 0.3);
-  --special-greylight: rgba(197,197,197, 0.3);
-  --special-greyblack: rgba(169, 169, 169, 0.3);
-  --special-black-oppacity: rgba(0,0,0, 0.3);
-  --special-inner-shadow: rgba(0, 0, 0, 0.24);
-  --special-card-shadow: rgba(0, 0, 0, 0.15);
-  --special-toggle-opacity: rgba(171, 171, 171, 0.3);
-  --special-dark-opacity: rgba(0, 0, 0, 0.1);
-
-  /* Переменные цветов - конец */
 
 
