@@ -218,6 +218,18 @@ img {
   opacity: 30%;
 }
 
+/*
+
+.icon-search .coordinates-search {
+  fill: var(--basic-white);
+}
+
+
+.search-input:focus ~ .coordinates-search {
+  fill: var(--basic-red-btn);
+  opacity: 100%;
+} */
+
 
 /* Иконка поиска в фокусе не меняет цвет на красный */
 
@@ -444,13 +456,26 @@ img {
 }
 
 
+ .login-link:hover .coordinates-login,
+ .login-link:focus .coordinates-login {
+  fill: var(--special-extra-dark-grey);
+}
+
+
+.login-link:active .coordinates-login {
+  fill: var(--special-gray);
+}
+
+
+
+/*
 .icon-login:hover .coordinates-login {
   fill: var(--special-extra-dark-grey);
 }
 
 .icon-login:active .coordinates-login {
   fill: var(--special-gray);
-}
+} */
 
 
 .sign-up .registration-link {
@@ -806,8 +831,8 @@ padding: 0;
 
 .catalog-slider-btn {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 220px;
+  left: 295px;
   display: flex;
 }
 
@@ -820,6 +845,10 @@ padding: 0;
   height: 10px;
 }
 
+.catalog-slider-btn .circle-btn-red {
+  top: 0;
+  left: 9px;
+}
 
 
 .catalog-slider-btn .circle-btn-white:after {
@@ -828,8 +857,8 @@ padding: 0;
   height: 10px;
   background-color: var(--basic-white);
   position: absolute;
-  top: 220px;
-  left: 295px;
+  top: 0;
+  left: 1px;
   border-radius: 50%;
 }
 
@@ -839,8 +868,8 @@ padding: 0;
   height: 6px;
   background-color: var(--basic-red-btn);
   position: absolute;
-  top: 220px;
-  left: 302px;
+  top: 0;
+  left: 1px;
   border-radius: 50%;
   border: 2px solid var(--basic-white);
 }
@@ -962,10 +991,9 @@ padding: 0;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  width: 157px;
+  width: 165px;
   margin: 0 auto;
   margin-bottom: 7px;
-
 }
 
 
@@ -1511,6 +1539,11 @@ background-color: var(--basic-dark);
   margin-bottom: 23px;
 }
 
+
+.footer-contact .footer-logo-link:active {
+  background-color: var(--special-red-btn);
+}
+
 .footer-contact img {
   margin-top: 19px;
   margin-bottom: 19px;
@@ -1571,6 +1604,7 @@ li .footer-menu-item:focus {
 
 li .footer-menu-item:active {
   opacity: 50%;
+  text-decoration: none;
 }
 
 
@@ -1596,6 +1630,7 @@ li .footer-menu-item-catalog:focus {
 
 li .footer-menu-item-catalog:active {
   opacity: 50%;
+  text-decoration: none;
 }
 
 
@@ -1709,10 +1744,19 @@ li .footer-menu-item-catalog:active {
   color: var(--basic-red-btn);
 }
 
+.footer-feedback .feedback-link:hover {
+  text-decoration: underline;
+}
+
 .footer-feedback
 .author-link:active {
   color: var(--basic-red-btn);
 }
+
+.footer-feedback .author-link:hover {
+  text-decoration: underline;
+}
+
 
 
 
@@ -1799,14 +1843,22 @@ li .footer-menu-item-catalog:active {
 }
 
 
-.icon-user:hover .coordinates-user,
-.icon-exit:hover .coordinates-exit {
+.icon-name-user:hover .coordinates-user,
+.icon-name-user:focus .coordinates-user {
+  fill: var(--special-extra-dark-grey);
+}
+
+.icon-name-user:active .coordinates-user {
+  fill: var(--special-gray);
+}
+
+.icon-exit-user:hover .coordinates-exit,
+.icon-exit-user:focus .coordinates-exit {
   fill: var(--special-extra-dark-grey);
 }
 
 
-.icon-user:active .coordinates-user,
-.icon-exit:active .coordinates-exit {
+.icon-exit-user:active .coordinates-exit {
   fill: var(--special-gray);
 }
 
@@ -2219,9 +2271,13 @@ li .footer-menu-item-catalog:active {
   display: block;
 }
 
+/* Наведение */
+
 .filter-input-checkbox:hover + label::before {
   border-color: var(--special-gray-radio);
 }
+
+/* Фокус */
 
 .filter-input-checkbox:focus + label::before {
   border: 1px solid var( --basic-dark);
@@ -2240,6 +2296,17 @@ li .footer-menu-item-catalog:active {
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
+}
+
+
+/* Блокирование */
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 30%;
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  opacity: 30%;
 }
 
 
@@ -2577,7 +2644,13 @@ background-color: var(--basic-white);
 }
 
 
+.modal-show {
+  display: block;
+}
+
+
 /* modal-feedback */
+
 
 .modal-feedback {
   display: none;
@@ -2709,6 +2782,7 @@ background-color: var(--basic-white);
 
 /* modal-map */
 
+
 .modal-map {
   display: none;
   top:  50%;
@@ -2749,6 +2823,8 @@ background-color: var(--basic-white);
   padding: 0;
   padding-top: 66px;
   padding-bottom: 67px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-align: center;
 }
 
@@ -2787,6 +2863,9 @@ background-color: var(--basic-white);
   color: var(--basic-black);
   padding-top: 11px;
   padding-bottom: 9px;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
   width: 192px;
 }
 
